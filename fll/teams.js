@@ -1,6 +1,8 @@
 function up(str)
-{
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+{	
+	try{
+    	return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+	}catch(e){console.log(e);}
 }
 
 document.addEventListener('DOMContentLoaded', function() {
