@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		httpRequest.open('GET', path);
 		httpRequest.send(); 
 	}
-	fetchJSONFile('https://jsonblob.com/api/568c0c5be4b01190df472d36', function(data){
+	fetchJSONFile('https://cdn.rawgit.com/Naramsim/FLL/master/fll/teams.json', function(data){
 		console.log(data);
 		var location = "", semiFinalLink = "";
 		qualified = [30,72,73,38,39,56,58,41,42,3,4,5,12,28,54,9,13,27,32,59,61,71,81,88,91,95,34,14];

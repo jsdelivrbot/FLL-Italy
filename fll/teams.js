@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		httpRequest.open('GET', path);
 		httpRequest.send(); 
 	}
-	fetchJSONFile('https://jsonblob.com/api/568c0c5be4b01190df472d36', function(data){
+	fetchJSONFile('https://cdn.rawgit.com/Naramsim/FLL/master/fll/teams.json', function(data){
 		console.log(data);
 		var location = "", semiFinalLink = "";
 		for (var key in data) {

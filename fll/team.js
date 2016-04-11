@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     httpRequest.open('GET', path);
     httpRequest.send();
   }
-  fetchJSONFile('http://ytlab.me/fll/teams.json', function(data) {
+  fetchJSONFile('https://cdn.rawgit.com/Naramsim/FLL/master/fll/teams.json', function(data) {
 
     teamId = window.location.hash.replace("#", "");
     teamId = teamId.slice(0, 3) + " " + teamId.slice(3);
