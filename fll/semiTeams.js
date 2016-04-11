@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
 						teamLink = baseUrl + "team/#" + key.replace(/\s+/g, '');
 						tr  = '<tr/>';
 						tr += "<td>" + key + "</td>";
-						tr += "<td><a href=" + teamLink + ">" + data[key]["nome squadra"] + "</a></td>";
-						tr += "<td>" + up(data[key].città) + "</td>";
+						tr += "<td><a href=" + teamLink + ">" + data[key]["nome_squadra"] + "</a></td>";
+						tr += "<td>" + up(data[key].citta) + "</td>";
 						tr += "<td><a href=" + semiFinalLink + ">" + data[key]["iscrizione_a_qualificazione_regionale"] + "</a></td>";
 						table = document.getElementById('teams');
 						table.insertAdjacentHTML( 'beforeend', tr );
