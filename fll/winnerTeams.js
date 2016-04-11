@@ -29,28 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
 			currentTeam = parseInt (key.replace(/(\s|\D)+/g, ''));
 			if (qualified.indexOf(currentTeam)>-1){
 				if (data.hasOwnProperty(key)) {
-					semiFinalLink = baseUrl	+ links[location] + "/";
-					teamLink = baseUrl + "team/#" + key.replace(/\s+/g, '');
-					tr  = '<tr/>';
-					tr += "<td>" + key + "</td>";
-					tr += "<td><a href=" + teamLink + ">" + data[key]["nome_squadra"] + "</a></td>";
-					tr += "<td>" + up(data[key].citta) + "</td>";
-					//tr += "<td><a href=" + semiFinalLink + ">" + data[key]["iscrizione_a_qualificazione_regionale"] + "</a></td>";
-					table = document.getElementById('qualifiedTeams');
-					table.insertAdjacentHTML( 'beforeend', tr );
-					
 					if (currentPage === "finale") {
 						teamLink = baseUrl + "team/#" + key.replace(/\s+/g, '');
 						tr  = '<tr/>';
 						tr += "<td>" + key + "</td>";
 						tr += "<td><a href=" + teamLink + ">" + data[key]["nome_squadra"] + "</a></td>";
 						tr += "<td>" + up(data[key].citta) + "</td>";
-						table = document.getElementById('qualifiedTeams');
+						table = document.getElementById('winnerTeams');
 						table.insertAdjacentHTML( 'beforeend', tr );
 					}
 				}
 			}
-			
 		}
 	});
 })
