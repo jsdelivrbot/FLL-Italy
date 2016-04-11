@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		var location = "", semiFinalLink = "";
 		for (var key in data) {
 			if (data.hasOwnProperty(key)) {
-				if (data[key]["iscrizione a qualificazione regionale"].indexOf("MEZZO") >= 0){location = 1}
-				if (data[key]["iscrizione a qualificazione regionale"].indexOf("PISTO") >= 0){location = 2}
-				if (data[key]["iscrizione a qualificazione regionale"].indexOf("GENOV") >= 0){location = 0}
-				if (data[key]["iscrizione a qualificazione regionale"].indexOf("CATAN") >= 0){location = 3}
+				if (data[key]["iscrizione_a_qualificazione_regionale"].indexOf("MEZZO") >= 0){location = 1}
+				if (data[key]["iscrizione_a_qualificazione_regionale"].indexOf("PISTO") >= 0){location = 2}
+				if (data[key]["iscrizione_a_qualificazione_regionale"].indexOf("GENOV") >= 0){location = 0}
+				if (data[key]["iscrizione_a_qualificazione_regionale"].indexOf("CATAN") >= 0){location = 3}
 				semiFinalLink = baseUrl	+ links[location] + "/";
 				teamLink = baseUrl + "team/#" + key.replace(/\s+/g, '');
 				tr  = '<tr/>';
 				tr += "<td>" + key + "</td>";
 				tr += "<td><a href=" + teamLink + ">" + data[key]["nome squadra"] + "</a></td>";
 				tr += "<td>" + up(data[key].città) + "</td>";
-				tr += "<td><a href=" + semiFinalLink + ">" + data[key]["iscrizione a qualificazione regionale"] + "</a></td>";
+				tr += "<td><a href=" + semiFinalLink + ">" + data[key]["iscrizione_a_qualificazione_regionale"] + "</a></td>";
 				table = document.getElementById('teams');
 				table.insertAdjacentHTML( 'beforeend', tr );
 			}
