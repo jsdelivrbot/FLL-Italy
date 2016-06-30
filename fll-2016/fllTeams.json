@@ -1,0 +1,112 @@
+{
+    "1": {
+        "city": "Formigine (Modena)",
+        "email": "",
+        "name": "Fiori",
+        "photo": "",
+        "region": "C",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "2": {
+        "city": "Vittorio Veneto (Treviso - TV)",
+        "email": "",
+        "name": "Toio Robot",
+        "photo": "",
+        "region": "NE",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "3": {
+        "city": "PAGANICO (Grosseto)",
+        "email": "",
+        "name": "I ROBOTICI",
+        "photo": "",
+        "region": "C",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "4": {
+        "city": "Genova",
+        "email": "",
+        "name": "ROBOFRIENDS",
+        "photo": "",
+        "region": "NO",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "5": {
+        "city": "Bergamo",
+        "email": "",
+        "name": "I robonauti",
+        "photo": "",
+        "region": "NO",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "6": {
+        "city": "Bergamo",
+        "email": "",
+        "name": "International School of Bergamo",
+        "photo": "",
+        "region": "NO",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "7": {
+        "city": "Lecce",
+        "email": "",
+        "name": "Tribù Digitale",
+        "photo": "",
+        "region": "IC",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "8": {
+        "city": "Valsamoggia (BO)",
+        "email": "",
+        "name": "GererAzione Cat",
+        "photo": "",
+        "region": "C",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "9": {
+        "city": "Roma",
+        "email": "",
+        "name": "BIG LEGO 9",
+        "photo": "",
+        "region": "S",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "10": {
+        "city": "Catania",
+        "email": "",
+        "name": "ARCHIROBOT",
+        "photo": "",
+        "region": "IC",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "1": {
+        "city": "Bergamo",
+        "email": "",
+        "name": "International School of Bergamo",
+        "photo": "",
+        "region": "B",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "2": {
+        "city": "Lecce",
+        "email": "",
+        "name": "Tribù Digitale",
+        "photo": "",
+        "region": "C",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "3": {
+        "city": "Bosco Chiesanuova (VR)",
+        "email": "",
+        "name": "Istituto Bosco Chiesanuova",
+        "photo": "",
+        "region": "R",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "4": {
+        "city": "Gravina in Puglia (Bari)",
+        "email": "",
+        "name": "STEMpatia",
+        "photo": "",
+        "region": "C",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    }
+}
