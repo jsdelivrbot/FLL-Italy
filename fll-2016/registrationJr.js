@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-	var table = '<table><thead><tr><th>Fase</th><th>Iscritte</th></tr></thead>#</table>'
+	var table = '<table><thead><tr><th>Fase</th><th>Iscritte</th></tr></thead>#</table>' + 
+    "<font size='+1'><b>Squadre Iscritte</b></font>";
 	var request = new XMLHttpRequest();
   request.open('GET', 'https://rawgit.com/Naramsim/FLL-Italy/master/fll-2016/fllJrTeams.json', true);
 
