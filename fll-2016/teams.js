@@ -11,7 +11,7 @@ var regionNames = {
 document.addEventListener('DOMContentLoaded', function() {
     var baseUrl = "http://fll-italia.it/fll/2016/";
     var links = ["nord-ovest", "nord-est", "centro", "sud", "isole-e-calabria"];
-    var hash = "cetro";
+    var hash = window.location.hash;
     var teamRe = /^FLL(\d+)$/;
     var regionRe = /^(?:nord-ovest|nord-est|centro|sud|isole-e-calabria)$/;
     console.log("Starting");
