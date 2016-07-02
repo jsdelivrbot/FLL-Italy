@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
         var intermediate = "";
         var team = teamRe.exec(hash);
         var region = regionRe.exec(hash);
+        if (region) {
+        	region = region[0].slice(1);
+        }
         var table = '<table><thead><tr><th>ID</th><th>Team</th><th>Da</th><th>Semi Finale</th></tr></thead><tbody>#</tbody></table>'
         if(team) {
 
