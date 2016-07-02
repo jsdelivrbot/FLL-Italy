@@ -44,9 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     var teamLink = baseUrl + "teams/#FLL" + key;
                     intermediate += '<tr>';
                     intermediate += "<td>FLL" + key + "</td>";
-                    intermediate += "<td><a href=" + teamLink + ">" + data[key].name + "</a></td>";
+                    intermediate += "<td>" +
+                    				// "<a href=" + teamLink + ">" +
+                    				data[key].name + 
+                    				// "</a>" +
+                    				"</td>";
                     intermediate += "<td>" + data[key].city + "</td>";
-                    intermediate += "<td><a href=" + semiFinalLink + ">" + regionNames[data[key].region] + "</a></td></tr>";
+                    intermediate += "<td>" +
+                    				// "<a href=" + semiFinalLink + ">" +
+                    				regionNames[data[key].region] + 
+                    				// "</a>" +
+                    				"</td></tr>";
                 }
             }
             table = table.replace('#', intermediate)
