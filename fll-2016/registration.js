@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       var intermediate = '';
       Object.keys(regions).forEach(function(key){
-      	intermediate += '<tr><td><a href="' + baseURL + regions[key][0].replace('\s', '-').toLowerCase() + '">' + regions[key][0] + '</a></td><td>' + regions[key][1] + '</td></tr>'
+      	intermediate += '<tr><td><a href="' + baseURL + regions[key][0].replace(/\s/g, '-').toLowerCase() + '">' + regions[key][0] + '</a></td><td>' + regions[key][1] + '</td></tr>'
       })
       table = table.replace('#', intermediate)
       document.getElementById('registration').insertAdjacentHTML('beforeend', table);

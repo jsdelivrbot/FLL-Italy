@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         } else if (region) {
             for (var key in data) {
-                if (data.hasOwnProperty(key) && hash === regionNames[data[key].region]) {
+                if (data.hasOwnProperty(key) && region == regionNames[data[key].region]) {
                     semiFinalLink = baseUrl + "semi-final/#" + regionNames[data[key].region];
                     var teamLink = baseUrl + "teams/#FLL" + key;
                     intermediate += '<tr>';
