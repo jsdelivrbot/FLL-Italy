@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         httpRequest.open('GET', path);
         httpRequest.send(); 
     }
-    fetchJSONFile('https://cdn.rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', function(data){
+    fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', function(data){
         console.log(data);
         var semiFinalLink = "";
         var intermediate = "";
