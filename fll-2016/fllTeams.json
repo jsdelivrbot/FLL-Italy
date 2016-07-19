@@ -119,5 +119,93 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "12": {
+        "city": "Fino Mornasco (Como)",
+        "email": "",
+        "name": "FINO ROBOT",
+        "photo": "",
+        "region": "NO",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "13": {
+        "city": "Milano",
+        "email": "",
+        "name": "The Pantas & Friends",
+        "photo": "",
+        "region": "NO",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "14": {
+        "city": "Firenze",
+        "email": "",
+        "name": "Robots_Lab Team_1",
+        "photo": "",
+        "region": "C",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "15": {
+        "city": "Firenze",
+        "email": "",
+        "name": "Robots_Lab Team_2",
+        "photo": "",
+        "region": "C",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "16": {
+        "city": "Udine",
+        "email": "",
+        "name": "Bearzi 2A - the wolf",
+        "photo": "",
+        "region": "NE",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "17": {
+        "city": "Udine",
+        "email": "",
+        "name": "Bearzi 2A - the hawk",
+        "photo": "",
+        "region": "NE",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "18": {
+        "city": "Udine",
+        "email": "",
+        "name": "Bearzi 2B - the bear",
+        "photo": "",
+        "region": "NE",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "19": {
+        "city": "Udine",
+        "email": "",
+        "name": "Bearzi 2B - the eagle",
+        "photo": "",
+        "region": "NE",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }
