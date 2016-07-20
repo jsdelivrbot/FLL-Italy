@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log("Starting");
 
     var teamFLL = teamFLLRe.exec(hash);
-    var teamJr = teamFLLRe.exec(hash);
+    var teamJr = teamJrRe.exec(hash);
     var regionFLL = regionFLLRe.exec(hash);
-    var regionJr = regionFLLRe.exec(hash);
+    var regionJr = regionJrRe.exec(hash);
 
     if (regionFLL || teamFLL) {
         build('fllTeams', regionFLL, teamFLL, baseUrlFLL, 'FLL')
