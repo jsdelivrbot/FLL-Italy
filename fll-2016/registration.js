@@ -1,7 +1,7 @@
-var baseURL = 'http://fll-italia.it/fll/2016/teams/#';
+var baseURL = 'http://fll-italia.it/?/2016/teams/#';
 var table = "<font size='+1'><b>Squadre Iscritte</b></font>" + 
     '<table><thead><tr><th>Fase</th><th>Iscritte</th></tr></thead>#</table>';
-    
+
 document.addEventListener('DOMContentLoaded', function() {
     var currentPath = window.location.pathname;
     var currentGame = /^\/(\w+)\/2016/.exec(currentPath)
@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         'pachino': 0};
 
     if (currentGame[1] === 'fll') {
-        build('fll', regionsFLL)
+        build('fll', regionsFLL, currentGame[1])
     } else if (currentGame[1] === 'junior') {
-        build('fllJr', regionsJr)
+        build('fllJr', regionsJr, currentGame[1])
     }
 })
 
-function build(game, regions) {
+function build(game, regions, gameUrl) {
     var request = new XMLHttpRequest();
 
     request.open('GET', 'https://rawgit.com/Naramsim/FLL-Italy/master/fll-2016/' + game + 'Teams.json', true);
@@ -38,7 +38,7 @@ function build(game, regions) {
                 regions[data[key].region] += 1;
             })
             Object.keys(regions).forEach(function(key){
-                intermediate += '<tr><td><a href="' + baseURL + key + '">' + key + '</a></td><td>' + regions[key] + '</td></tr>'
+                intermediate += '<tr><td><a href="' + baseURL.replace('?', gameUrl) + key + '">' + key + '</a></td><td>' + regions[key] + '</td></tr>'
             })
 
             table = table.replace('#', intermediate)
