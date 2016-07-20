@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var baseURL = 'http://fll-italia.it/fll/2016/teams/#';
-    var table = "<font size='+1'><b>Squadre Iscritte</b></font>" + 
+var baseURL = 'http://fll-italia.it/fll/2016/teams/#';
+var table = "<font size='+1'><b>Squadre Iscritte</b></font>" + 
     '<table><thead><tr><th>Fase</th><th>Iscritte</th></tr></thead>#</table>';
+    
+document.addEventListener('DOMContentLoaded', function() {
     var currentPath = window.location.pathname;
     var currentGame = /^\/(\w+)\/2016/.exec(currentPath)
     var regionsFLL = {  'nord-est': 0, 
@@ -39,7 +40,7 @@ function build(game, regions) {
             Object.keys(regions).forEach(function(key){
                 intermediate += '<tr><td><a href="' + baseURL + key + '">' + key + '</a></td><td>' + regions[key] + '</td></tr>'
             })
-            
+
             table = table.replace('#', intermediate)
             document.getElementById('registration').insertAdjacentHTML('beforeend', table);
         }
