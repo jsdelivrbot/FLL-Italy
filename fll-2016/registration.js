@@ -27,7 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function build(game, regions, gameUrl) {
     var request = new XMLHttpRequest();
-
+    
+    if (game === 'fllJr') {
+        baseURL = baseURL.replace('teams', 'team')
+    }
     request.open('GET', 'https://rawgit.com/Naramsim/FLL-Italy/master/fll-2016/' + game + 'Teams.json', true);
     request.onload = function() {
         if (this.status >= 200 && this.status < 400) {
