@@ -53,9 +53,9 @@ function build(url, region, team, baseUrl, teamUrl) {
 
             if (url === 'fllTeams') {
                 over = over.replace('#', region).replace('@', origin[region])
-                table.replace('@', over);
+                table = table.replace('@', over);
             } else if (url === 'fllJrTeams') {
-                table.replace('@', '');
+                table = table.replace('@', '');
             }
 
             for (var key in data) {
