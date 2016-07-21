@@ -7,7 +7,7 @@ var origin = {
     'nord-est': 'Triveneto, Province di Brescia, Sondrio e Mantova',
     'centro': 'Toscana, Emilia-Romagna (eccetto Piacenza), Umbria, Marche, alto Lazio, Abruzzo',
     'sud': 'Basso Lazio, Campania, Basilicata, Puglia, Molise',
-    'isole-e-calabria'; 'Calabria , Sicilia, Sardegna'
+    'isole-e-calabria': 'Calabria , Sicilia, Sardegna'
 }
 
 document.addEventListener('DOMContentLoaded', function() {
