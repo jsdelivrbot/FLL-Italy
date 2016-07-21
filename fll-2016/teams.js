@@ -2,6 +2,14 @@
 * Page for single teams, region-filtered teams, all teams
 */
 
+var origin = {
+    'nord-ovest': 'Liguria, Piemonte, Valle D’Aosta, Provincia di Piacenza , Lombardia (eccetto province di Brescia, Sondrio, Mantova)',
+    'nord-est': 'Triveneto, Province di Brescia, Sondrio e Mantova',
+    'centro': 'Toscana, Emilia-Romagna (eccetto Piacenza), Umbria, Marche, alto Lazio, Abruzzo',
+    'sud': 'Basso Lazio, Campania, Basilicata, Puglia, Molise',
+    'isole-e-calabria'; 'Calabria , Sicilia, Sardegna'
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var baseUrlFLL = "http://fll-italia.it/fll/2016/";
     var baseUrlJr = "http://fll-italia.it/junior/2016/";
@@ -32,14 +40,24 @@ function build(url, region, team, baseUrl, teamUrl) {
         var semiFinalLink = "";
         var intermediate = "";
         var teamLink = "";
-        var table = '<table><thead><tr><th>ID</th><th>Team</th><th>Da</th><th>Semi Finale</th></tr></thead><tbody>#</tbody></table>'
+        var table = '@<table><thead><tr><th>ID</th><th>Team</th><th>Da</th><th>Semi Finale</th></tr></thead><tbody>#</tbody></table>';
 
         if (region) {
             region = region[0].slice(1); // slice the hash
         }
+
         if(team) {
 
         } else if (region) {
+            var over = '<h3>Squadre iscritte alla fase #</h3><div>Le squadre provengono da:@</div></br>'
+
+            if (url === 'fllTeams') {
+                over = over.replace('#', region).replace('@', origin[region])
+                table.replace('@', over);
+            } else if (url === 'fllJrTeams') {
+                table.replace('@', '');
+            }
+
             for (var key in data) {
                 if (data.hasOwnProperty(key) && region == data[key].region) {
                     semiFinalLink = baseUrl + "semi-final/#" + data[key].region;
