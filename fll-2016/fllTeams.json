@@ -218,5 +218,16 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "21": {
+        "city": "Bolzano Vicentino (VI)",
+        "email": "",
+        "name": "Lego ergo sum",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }
