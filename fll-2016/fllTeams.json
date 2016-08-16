@@ -240,5 +240,16 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "23": {
+        "city": "Verona",
+        "email": "",
+        "name": "iDB",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }
