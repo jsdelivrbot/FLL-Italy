@@ -46,6 +46,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a {
+.artct a {
 	text-shadow: unset;
+}
+
+.swtext a:link, .swtext a:visited {
+    color: #69b120;
 }

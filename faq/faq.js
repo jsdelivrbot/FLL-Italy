@@ -26,25 +26,25 @@ var faq = `
 			<li>
 				<a class="cd-faq-trigger" href="#0">Qual è il ruolo di <i>FIRST</i>®?</a>
 				<div class="cd-faq-content">
-					<p><i>FIRST</i>® è responsabile per fornire:
+					<p><i>FIRST</i>® è responsabile per fornire:</p>
 
-						• La visione e la missione generale per ispirare l’interesse dei giovani e la partecipazione alla scienza e alla tecnologia. Questa visione guida tutte le decisioni di <i>FIRST</i>® e decide lo sviluppo del programma della <i>FIRST</i>® LEGO® League.
-						• Il programma della <i>FIRST</i>® LEGO® League include lo sviluppo dell’annuale sfida <i>FIRST</i>® LEGO® League, i criteri per il programma <i>FIRST</i>® LEGO® League e per il torneo di campionato e il sostenimento dei documenti dei programmi.</p>
+					<p>• La visione e la missione generale per ispirare l’interesse dei giovani e la partecipazione alla scienza e alla tecnologia. Questa visione guida tutte le decisioni di <i>FIRST</i>® e decide lo sviluppo del programma della <i>FIRST</i>® LEGO® League.</p>
+					<p>• Il programma della <i>FIRST</i>® LEGO® League include lo sviluppo dell’annuale sfida <i>FIRST</i>® LEGO® League, i criteri per il programma <i>FIRST</i>® LEGO® League e per il torneo di campionato e il sostenimento dei documenti dei programmi.</p>
 				</div> <!-- cd-faq-content -->
 			</li>
 
 			<li>
 				<a class="cd-faq-trigger" href="#0">Informazioni riguardo a come la <i>FIRST</i>® LEGO® League ha attualmente un impatto sulla futura forza lavoro nella scienza e nell’ingegneria</a>
 				<div class="cd-faq-content">
-					<p>Circa 267,000 bambini parteciperanno alla <i>FIRST</i>® LEGO® League nel 2014/2015. Uno studio dei partecipanti della <i>FIRST</i>® LEGO® League negli Stati Uniti e in Canada condotto dalla Brandeis University ha dimostrato che:
+					<p>Circa 267,000 bambini parteciperanno alla <i>FIRST</i>® LEGO® League nel 2014/2015. Uno studio dei partecipanti della <i>FIRST</i>® LEGO® League negli Stati Uniti e in Canada condotto dalla Brandeis University ha dimostrato che:</p>
 
-						• 92% degli allenatori ha riportato una crescita nella comprensione degli studenti in come la scienza e la tecnologia possano essere usate nel mondo reale.
+						<p>• 92% degli allenatori ha riportato una crescita nella comprensione degli studenti in come la scienza e la tecnologia possano essere usate nel mondo reale.</p>
 
-						Tra i partecipanti delle scorse edizioni:
+						<p>Tra i partecipanti delle scorse edizioni:</p>
 
-						• 90% ha voluto imparare di più sui computer e sui robot;
-						• 89% ha voluto imparare di più sulla scienza e sulla tecnologia;
-						• 80% ha riportato una crescita di interesse nell’avere un lavoro che usa scienza o tecnologia quando sarà più grande.</p>
+						<p>• 90% ha voluto imparare di più sui computer e sui robot;</p>
+						<p>• 89% ha voluto imparare di più sulla scienza e sulla tecnologia;</p>
+						<p>• 80% ha riportato una crescita di interesse nell’avere un lavoro che usa scienza o tecnologia quando sarà più grande.</p>
 				</div> <!-- cd-faq-content -->
 			</li>
 			<li>
