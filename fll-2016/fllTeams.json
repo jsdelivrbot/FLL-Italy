@@ -251,5 +251,16 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "24": {
+        "city": "Bolzano Vicentino (VI)",
+        "email": "",
+        "name": "DREAM TEAM",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }
