@@ -105,7 +105,7 @@ var faq = `
 			<li>
 				<a class="cd-faq-trigger" href="#0">Quanti membri puó avere una squadra?</a>
 				<div class="cd-faq-content">
-					<p><i>FIRST</i>® LEGO® League: minimo 3, massimo 10 membri ufficiali. Minimo 1 coach adulto
+					<p><i>FIRST</i>® LEGO® League: minimo 2, massimo 10 membri ufficiali. Minimo 2 coaches adulti
 					<p><i>FIRST</i>® LEGO® League Junior: minimo 2, massimo 6 membri ufficiali. Minimo 2 coaches adulti</p>
 				</div> <!-- cd-faq-content -->
 			</li>
