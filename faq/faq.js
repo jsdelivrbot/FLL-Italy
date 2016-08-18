@@ -4,6 +4,7 @@ var faq = `
 		<li><a class="selected" href="#cose">Cos'é?</a></li>
 		<li><a href="#costiPremi">Costi e premi</a></li>
 		<li><a href="#iscrizione">Iscrizioni</a></li>
+		<li><a href="#volontariato">Volontari</a></li>
 	</ul> <!-- cd-faq-categories -->
 
 	<div class="cd-faq-items">
@@ -73,14 +74,14 @@ var faq = `
 				<a class="cd-faq-trigger" href="#0">Quanto costa iscriversi?</a>
 				<div class="cd-faq-content">
 					<p>210 Euro per l'iscrizione a <i>FIRST</i>® LEGO® League, 60 Euro per l'iscrizione a <i>FIRST</i>® LEGO® League Junior.
-					Leggi di piú qua: <a href="Costi">http://fll-italia.it/costi/</a></p>
+					Leggi di piú qua: <a href="http://fll-italia.it/costi/">Costi</a></p>
 				</div> <!-- cd-faq-content -->
 			</li>
 
 			<li>
 				<a class="cd-faq-trigger" href="#0">Cosa vincono gli studenti?</a>
 				<div class="cd-faq-content">
-					<p>La competizione è giudicata in quattro aree: la presentazione del progetto, la performance del robot, la progettazione tecnica e la programmazione del robot e il lavoro di squadra. Una giuria di illustri professionisti prende le decisioni per il premio. Il più alto onore, il Champion’s Award, va alla squadra più forte in tutte e quattro le categorie. Ogni partecipante del torneo di campionato riceve un medaglione per commemorare la sua esperienza e la dedizione al percorso di otto settimane.</p>
+					<p>La competizione è giudicata in quattro aree: la presentazione del progetto, la performance del robot, la progettazione tecnica e la programmazione del robot e il lavoro di squadra. Una giuria di illustri professionisti prende le decisioni per il premio. Il più alto onore, il Champion’s Award, va alla squadra più forte in tutte e quattro le categorie. Ogni partecipante del torneo di campionato riceve un medaglione per commemorare la sua esperienza e la dedizione al percorso di otto settimane. Durante la finale altri premi vengono assegnati in base alla classifica nelle specifiche aree, da droni a stampinti 3D a kit EV3</p>
 				</div> <!-- cd-faq-content -->
 			</li>
 		</ul> <!-- cd-faq-group -->
@@ -109,6 +110,25 @@ var faq = `
 					<p><i>FIRST</i>® LEGO® League Junior: minimo 2, massimo 6 membri ufficiali. Minimo 2 coaches adulti</p>
 				</div> <!-- cd-faq-content -->
 			</li>
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="volontariato" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Volontari</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Accettate volontari?</a>
+				<div class="cd-faq-content">
+					<p>Certo, la maggior parte delle persone che organizzano e sviluppano i vari eventi sono volontari. <i>FIRST</i>® LEGO® League é sempre in cerca di persone appassionate, da vecchi competitors a giovani aspiranti concorrenti.
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Dove posso candidarmi come volontario?</a>
+				<div class="cd-faq-content">
+					<p>È semplicissimo, se vuoi candidarti per <i>FIRST</i>® LEGO® League compila questo <a href="https://docs.google.com/forms/u/0/d/1NIKU_7Ttcj7KxrzGmTS2TNn8QiJONzybZU2WL0zRk-c/edit">questionario</a>.</p>
+					<p>Se vuoi candidarti per <i>FIRST</i>® LEGO® League Junior compila <a href="https://docs.google.com/forms/u/0/d/1NIKU_7Ttcj7KxrzGmTS2TNn8QiJONzybZU2WL0zRk-c/edit">questo</a> invece</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
 		</ul> <!-- cd-faq-group -->
 
 	</div> <!-- cd-faq-items -->
