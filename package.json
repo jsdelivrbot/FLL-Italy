@@ -1,0 +1,28 @@
+{
+  "name": "fll-italy-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compileFAQ": "babel ./faq/faq.js --out-file ./faq/faqCompiled.js --presets es2015",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naramsim/FLL.git"
+  },
+  "keywords": [
+    "fll",
+    "italy"
+  ],
+  "author": "Naramsim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naramsim/FLL/issues"
+  },
+  "homepage": "https://github.com/Naramsim/FLL#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2"
+  }
+}
