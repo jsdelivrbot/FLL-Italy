@@ -221,9 +221,7 @@ var faq = `
 	</div> <!-- cd-faq-items -->
 	<a href="#0" class="cd-close-panel">Close</a>
 </section> <!-- cd-faq -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://rawgit.com/Naramsim/FLL-Italy/master/faq/jquery.mobile.custom.min.js"></script>
-<script src="https://rawgit.com/Naramsim/FLL-Italy/master/faq/main.js"></script>`
+`
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('faq').insertAdjacentHTML( 'beforeend', faq );
