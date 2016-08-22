@@ -262,5 +262,16 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "25": {
+        "city": "Genova",
+        "email": "",
+        "name": "The girls",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }

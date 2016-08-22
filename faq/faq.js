@@ -124,8 +124,8 @@ var faq = `
 			<li>
 				<a class="cd-faq-trigger" href="#0">Dove posso candidarmi come volontario?</a>
 				<div class="cd-faq-content">
-					<p>È semplicissimo, se vuoi candidarti per <i>FIRST</i>® LEGO® League compila questo <a href="https://docs.google.com/forms/u/0/d/1NIKU_7Ttcj7KxrzGmTS2TNn8QiJONzybZU2WL0zRk-c/edit">questionario</a>.</p>
-					<p>Se vuoi candidarti per <i>FIRST</i>® LEGO® League Junior compila <a href="https://docs.google.com/forms/u/0/d/1NIKU_7Ttcj7KxrzGmTS2TNn8QiJONzybZU2WL0zRk-c/edit">questo</a> invece</p>
+					<p>È semplicissimo, se vuoi candidarti per <i>FIRST</i>® LEGO® League compila questo <a href="https://docs.google.com/forms/d/1NIKU_7Ttcj7KxrzGmTS2TNn8QiJONzybZU2WL0zRk-c/prefill">questionario</a>.</p>
+					<p>Se vuoi candidarti per <i>FIRST</i>® LEGO® League Junior compila <a href="https://docs.google.com/forms/d/19ny3_rKNpgZR-BdjJxNASjvT7MF3O2ZxhJdeJmjU6MQ/prefill">questo</a> invece</p>
 				</div> <!-- cd-faq-content -->
 			</li>
 
