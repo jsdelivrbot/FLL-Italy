@@ -273,5 +273,27 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "26": {
+        "city": "Genova",
+        "email": "",
+        "name": "iBot",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "27": {
+        "city": "Genova",
+        "email": "",
+        "name": "Calasanzio junior",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }
