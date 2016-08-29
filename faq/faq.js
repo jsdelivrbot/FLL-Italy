@@ -150,6 +150,13 @@ var faq = `
 			</li>
 
 			<li>
+				<a class="cd-faq-trigger" href="#0">Dove trovo le istruzioni per costruire le missioni?</a>
+				<div class="cd-faq-content">
+					<a href="http://www.firstlegoleague.org/missionmodelbuildinginstructions">Qua</a>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
 				<a class="cd-faq-trigger" href="#0">Che sensori sono ammessi?</a>
 				<div class="cd-faq-content">
 					<p>• Giroscopio EV3</p>

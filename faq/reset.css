@@ -48,7 +48,3 @@ table {
 .artct a {
 	text-shadow: unset;
 }
-
-.swtext a:link, .swtext a:visited {
-    color: #69b120;
-}
