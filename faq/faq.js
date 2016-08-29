@@ -180,8 +180,19 @@ var faq = `
 					<p>Durante un singolo match sono consentiti in totale 4 motori. Si puó scegliere fra i seguenti tipi:</p>
 					<p>• Motore medio RCX</p>
 					<p>• Motore NXT</p>
-					<p>• Motore EV3/p>
+					<p>• Motore EV3</p>
 					<p>• Motore medio EV3</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Come posso programmare il mio robot?</a>
+				<div class="cd-faq-content">
+					<p>Usando uno di questi software, i soli ammessi:</p>
+					<p>LEGO® MINDOSTORM RCX</p>
+					<p>LEGO® MINDOSTORM NXT</p>
+					<p>LEGO® MINDOSTORM EV3</p>
+					<p>RoboLab</p>
 				</div> <!-- cd-faq-content -->
 			</li>
 
