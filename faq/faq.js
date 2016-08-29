@@ -5,6 +5,7 @@ var faq = `
 		<li><a href="#costiPremi">Costi e premi</a></li>
 		<li><a href="#iscrizione">Iscrizioni</a></li>
 		<li><a href="#volontariato">Volontari</a></li>
+		<li><a href="#robotgame">Gara Robotica</a></li>
 	</ul> <!-- cd-faq-categories -->
 
 	<div class="cd-faq-items">
@@ -126,6 +127,54 @@ var faq = `
 				<div class="cd-faq-content">
 					<p>È semplicissimo, se vuoi candidarti per <i>FIRST</i>® LEGO® League compila questo <a href="https://goo.gl/forms/QE2BHrPhxHCTCtZ03">questionario</a>.</p>
 					<p>Se vuoi candidarti per <i>FIRST</i>® LEGO® League Junior compila <a href="https://goo.gl/forms/GlaSuZ14mkrLj9tu2">questo</a> invece</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="robotgame" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Gara Robotica</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Che dimensioni ha il tavolo da gara?</a>
+				<div class="cd-faq-content">
+					<p>Il tavolo da gara ha dimensioni pari a: 2362mm per il lato lungo, 1143mm per il lato corto. Con un margine di scarto pari a 3mm.
+					<p>L'altezza dei bordi del campo varia da 64mm a 90mm</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Come é allineato il telo sul campo da gara?</a>
+				<div class="cd-faq-content">
+					<p>Il telo é allineato in modo che il suo bordo SUD sia attaccato al bordo SUD del tavolo. Il telo é centrato fra la parte EST e OVEST con un margine di scarto di 5mm</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Che sensori sono ammessi?</a>
+				<div class="cd-faq-content">
+					<p>• Giroscopio EV3</p>
+					<p>• Contatto EV3</p>
+					<p>• Contatto NXT</p>
+					<p>• Contatto RCX</p>
+					<p>• Colore EV3</p>
+					<p>• Colore NXT</p>
+					<p>• Luce NXT</p>
+					<p>• Luce RCX</p>
+					<p>• Ultrasuoni EV3</p>
+					<p>• Ultrasuoni NXT</p>
+					<p>• Rotazione RCX</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">Quante centraline e motori sono ammessi?</a>
+				<div class="cd-faq-content">
+					<p>Durante un singolo match é consentita solo una centralina. Fra i match é consentito sostituire la centralina.</p>
+					<p>Durante un singolo match sono consentiti in totale 4 motori. Si puó scegliere fra i seguenti tipi:</p>
+					<p>• Motore medio RCX</p>
+					<p>• Motore NXT</p>
+					<p>• Motore EV3/p>
+					<p>• Motore medio EV3</p>
 				</div> <!-- cd-faq-content -->
 			</li>
 
