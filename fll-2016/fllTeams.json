@@ -275,6 +275,17 @@
         "veteran": false
     },
     "26": {
+        "city": "Motta Sant Anastasia (Catania)",
+        "email": "",
+        "name": "Rocket Propelled Geeks",
+        "photo": "",
+        "region": "isole-e-calabria",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "27": {
         "city": "Genova",
         "email": "",
         "name": "iBot",
@@ -285,10 +296,21 @@
         "tech_report_preview": "",
         "veteran": false
     },
-    "27": {
+    "28": {
         "city": "Genova",
         "email": "",
         "name": "Calasanzio junior",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "29": {
+        "city": "Crema",
+        "email": "",
+        "name": "IOROBOT",
         "photo": "",
         "region": "nord-ovest",
         "scie_report": "",
