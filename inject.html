@@ -1,106 +1,201 @@
+<!-- Google font Lato -->
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-<style type="text/css" media="all">
-body, .swtitle, .logsezdx>h3{
-    font-family: 'Lato', sans-serif;
-}
-#center{
-    max-width: 95%;
-}
-.artct, .inevctinevnews{
-    max-width: 95%;
-}
 
-.hdimgs{
-    background-image: url("http://fll-italia.it/static/image/ic_search_black_36dp_2x1098552154.png");
-}
-.center{
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 95%;
-}
-.maincenter{
-    width: 80%;
-}
-.swtext{
-    letter-spacing: 1px;
-    line-height: 150%;
-}
-.swtext table, .swtext input, .swtext form{
-    letter-spacing: initial;
-}
-.artct{
-    padding: 50px !important;
-    width: 770px;
-    box-sizing: border-box;
-}
-.tagct{
-    padding: 30px 50px !important;
-    width: 770px;
-    box-sizing: border-box;
-}
-.barright{
-    width: 18%;
-    display: inline-flex;
-    flex-direction: column-reverse;
-}
-.pubright{
-    background: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 0;
-}
-.listimg:hover {
-    -moz-animation: none;
-    -webkit-animation: none;
-    -ms-animation: none;
-    -o-animation: none;
-}
-.inevcti:hover > .princimage {
-    -moz-animation: none;
-    -webkit-animation: none;
-    -ms-animation: none;
-    -o-animation: none;
-}
-</style>
-<style>
-  @media (max-width: 1000px) {
-    .barright {
-      display: none;
+<!-- Mobile menu CSS, overwritten below -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.7/slicknav.min.css">
+
+<!-- CSS to beautify this shit site -->
+<style type="text/css" media="all">
+    body, .swtitle, .logsezdx > h3{
+        font-family: 'Lato', sans-serif;
     }
-    .artct, .tagct, .varct {
-       max-width: 122%;
+    #center, #footcenter{
+        max-width: 95%;
     }
-  }
+    .artct, .inevctinevnews, .tagct{
+        max-width: 95%;
+    }
+    .hdimgs{
+        background-image: url("http://fll-italia.it/static/image/ic_search_black_36dp_2x1098552154.png");
+    }
+    .center{
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 95%;
+    }
+
+    .swtext{
+        letter-spacing: 1px;
+        line-height: 150%;
+    }
+    .swtext table, .swtext input, .swtext form{
+        letter-spacing: initial;
+    }
+    .artct{
+        padding: 50px !important;
+        width: 770px;
+        box-sizing: border-box;
+    }
+    .tagct{
+        padding: 30px 50px !important;
+        width: 770px;
+        box-sizing: border-box;
+    }
+    .barright{
+        width: 18%;
+        display: inline-flex;
+        flex-direction: column-reverse;
+    }
+    .pubright{
+        background: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 0;
+    }
+    .listimg:hover {
+        -moz-animation: none;
+        -webkit-animation: none;
+        -ms-animation: none;
+        -o-animation: none;
+    }
+    .inevcti:hover > .princimage {
+        -moz-animation: none;
+        -webkit-animation: none;
+        -ms-animation: none;
+        -o-animation: none;
+    }
+    .slicknav_menu {
+        display: none;
+    }
+    @media (max-width: 1000px) {
+        .barright { /*Right side bar*/
+            display: none;
+        }
+    }
+    @media (max-width: 800px) {
+        .showdate.showdatecategoryd, .inevct.inevctinevnews, .footst, .sharebox, .footseo, #headcenter > nav > ul, #headsusb.hdimgs, .center.nodatamcf {
+            display: none;
+        }
+        .artct, .tagct, .varct {
+            padding: 20px !important;
+        }
+        .varct {
+            max-width: 100%;
+            width: auto;
+        }
+        .maincenter{
+            width: 100%;
+        }
+        .swtext {
+            text-align: center;
+        }
+        .listimg.listimgcategoryd {
+            height: 50px;
+        }
+        .varct.varctcategory {
+            text-align: end;
+        }
+        .footinfo {
+            position: static;
+        }
+        #headcenter {
+            width: 100%;
+        }
+        #headcenter > nav {
+            width: auto;
+        }
+        .slicknav_menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: visible;
+            z-index: 20;
+            height: auto;
+            min-height: 73px;
+            width: 100%;
+            background-color: #FBFBFB;
+            box-shadow: 0 0 5px #888;
+            display: block;
+        }
+        .slicknav_menu ul {
+            margin-top: 70px;
+        }
+        .slicknav_nav a {
+            color: black;
+        }
+        header {
+            z-index: 25;
+            width: 175px;
+            -moz-box-shadow: unset;
+            -webkit-box-shadow: unset;
+            box-shadow: unset;
+        }
+        #center {
+            z-index: 5;
+        }
+        .printbox {
+            border-left: unset;
+            border-bottom: 1px #ccc solid;
+        }
+        .pagefinfo {
+            left: 25%;
+        }
+        .slicknav_btn {
+            margin: 12px 5px 6px;
+        }
+        .homebody header {
+            display: block;
+        }
+        .imgcont {
+            left: 5px;
+        }
+    }
 </style>
+
+<!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-72088147-1', 'auto');
   ga('send', 'pageview');
 
 </script>
+
+<!-- For mobile -->
 <script>
     viewport = document.querySelector("meta[name=viewport]");
     viewport.setAttribute('content', 'width=device-width, initial-scale=1');
 </script>
-<script>
-if(document.getElementsByClassName('homebk').length>0){
-    document.querySelectorAll('.inputhcont>a:nth-child(1)>.inputh')[0].style.background = '#fff url(https://rawgit.com/Naramsim/FLL-Italy/master/img/FIRST_italy.png) no-repeat center center '
-    document.querySelectorAll('.inputhcont>a:nth-child(1)>.inputh')[0].style.backgroundSize = '81px auto'
-    document.querySelectorAll('.inputhcont>a:nth-child(1)>.inputh')[0].textContent = ''
-    
-    document.querySelectorAll('.inputhcont>a:nth-child(3)>.inputh')[0].style.background = '#fff url(https://rawgit.com/Naramsim/FLL-Italy/master/img/FIRSTLego.png) no-repeat center center '
-    document.querySelectorAll('.inputhcont>a:nth-child(3)>.inputh')[0].style.backgroundSize = '91px auto'
-    document.querySelectorAll('.inputhcont>a:nth-child(3)>.inputh')[0].textContent = ''
-    document.querySelectorAll('.inputhcont>a:nth-child(3)')[0].href ='fll/2016/'
-    
-    document.querySelectorAll('.inputhcont>a:nth-child(4)>.inputh')[0].style.background = '#fff url(https://rawgit.com/Naramsim/FLL-Italy/master/img/FIRSTLegoJR.png) no-repeat center center '
-    document.querySelectorAll('.inputhcont>a:nth-child(4)>.inputh')[0].style.backgroundSize = '128px auto'
-    document.querySelectorAll('.inputhcont>a:nth-child(4)>.inputh')[0].textContent = ''
-    document.querySelectorAll('.inputhcont>a:nth-child(4)')[0].href ='junior/2016/'
 
-}
+<!-- Adds new icons to home page -->
+<script>
+    if(document.getElementsByClassName('homebk').length > 0){
+        document.querySelectorAll('.inputhcont>a:nth-child(1)>.inputh')[0].style.background = '#fff url(https://rawgit.com/Naramsim/FLL-Italy/master/img/FIRST_italy.png) no-repeat center center '
+        document.querySelectorAll('.inputhcont>a:nth-child(1)>.inputh')[0].style.backgroundSize = '81px auto'
+        document.querySelectorAll('.inputhcont>a:nth-child(1)>.inputh')[0].textContent = ''
+
+        document.querySelectorAll('.inputhcont>a:nth-child(3)>.inputh')[0].style.background = '#fff url(https://rawgit.com/Naramsim/FLL-Italy/master/img/FIRSTLego.png) no-repeat center center '
+        document.querySelectorAll('.inputhcont>a:nth-child(3)>.inputh')[0].style.backgroundSize = '91px auto'
+        document.querySelectorAll('.inputhcont>a:nth-child(3)>.inputh')[0].textContent = ''
+        document.querySelectorAll('.inputhcont>a:nth-child(3)')[0].href ='fll/2016/'
+
+        document.querySelectorAll('.inputhcont>a:nth-child(4)>.inputh')[0].style.background = '#fff url(https://rawgit.com/Naramsim/FLL-Italy/master/img/FIRSTLegoJR.png) no-repeat center center '
+        document.querySelectorAll('.inputhcont>a:nth-child(4)>.inputh')[0].style.backgroundSize = '128px auto'
+        document.querySelectorAll('.inputhcont>a:nth-child(4)>.inputh')[0].textContent = ''
+        document.querySelectorAll('.inputhcont>a:nth-child(4)')[0].href ='junior/2016/'
+    }
+</script>
+
+<!-- SlickNav mobile menu & jQuery :( -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.7/jquery.slicknav.min.js"></script>
+<script>
+    $(function(){
+        $('#headcenter > nav > ul').slicknav({
+            prependTo:'body'
+        });
+    });
 </script>
