@@ -420,4 +420,12 @@ Main components
   .no-js .cd-faq-content {
     display: block;
   }
+  .cd-faq-items {
+    top:73px;
+  }
+}
+
+.maincenter {
+  width: auto !important;
+  margin-top: 22px !important;
 }
