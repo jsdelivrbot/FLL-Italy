@@ -177,7 +177,7 @@ Main components
   top: 0;
   right: 0;
   background: #ffffff;
-  padding: 0 5% 1em;
+  padding: 74px 5% 1em;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 1;
@@ -419,9 +419,6 @@ Main components
   }
   .no-js .cd-faq-content {
     display: block;
-  }
-  .cd-faq-items {
-    top:73px;
   }
 }
 
