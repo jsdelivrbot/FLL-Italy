@@ -426,6 +426,6 @@ Main components
 }
 
 .maincenter {
-  width: auto !important;
-  margin-top: 22px !important;
+  width: 100%;
+  margin-top: 22px;
 }
