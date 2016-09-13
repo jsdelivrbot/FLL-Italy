@@ -204,9 +204,9 @@ var faq = `
 			<li>
 				<a class="cd-faq-trigger" href="#0">Contattaci!</a>
 				<div class="cd-faq-content" style="display: block;">
-					<p>Lo staff <i>FIRST</i>® LEGO® League Italia è disponibile per appuntamenti telefonici per domande,dubbi,richieste,informazioni inerenti allo svolgimento della gara, la logistica, la preparazione, le missioni, la parte robotica, la parte scientifica etc...
-Per poter prenotare un'appuntamento telefonico o scrivere email a Stefano (gara, parte scientifica), Alessandro (parte robotica e missioni) o Francesca (logistica e informazioni) mandate un'email a <a href="mailto:fll@fondazioneMCR.it?&subject=[FLL] Richiesta informazioni riguardo a {}">fll@fondazioneMCR.it</a> specificando l'operatore a cui volete chiedere informazioni e lasciando un vostro recapito telefonico.
-Sarà nostra cura richiamarvi!</p>
+					<p>Lo staff <i>FIRST</i>® LEGO® League Italia è disponibile per appuntamenti telefonici per domande,dubbi,richieste,informazioni inerenti allo svolgimento della gara, la logistica, la preparazione, le missioni, la parte robotica, la parte scientifica etc...</p>
+					<p>Per poter prenotare un'appuntamento telefonico o scrivere email a Stefano (gara, parte scientifica), Alessandro (parte robotica e missioni) o Francesca (logistica e informazioni) mandate un'email a <a href="mailto:fll@fondazioneMCR.it?&subject=[FLL] Richiesta informazioni riguardo a {}">fll@fondazioneMCR.it</a> specificando l'operatore a cui volete chiedere informazioni e lasciando un vostro recapito telefonico.</p>
+					<p>Sarà nostra cura richiamarvi!</p>
 				</div> <!-- cd-faq-content -->
 			</li>
 
