@@ -317,5 +317,159 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "30": {
+        "city": "Roma",
+        "email": "",
+        "name": "Rome:bots",
+        "photo": "",
+        "region": "sud",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "31": {
+        "city": "Marsala",
+        "email": "",
+        "name": "Daimenes",
+        "photo": "",
+        "region": "isole-e-calabria",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "32": {
+        "city": "Bronte",
+        "email": "",
+        "name": "PistacchiNator",
+        "photo": "",
+        "region": "isole-e-calabria",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "33": {
+        "city": "Augusta",
+        "email": "",
+        "name": "ITI AUGUSTA",
+        "photo": "",
+        "region": "isole-e-calabria",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "34": {
+        "city": "Pedara",
+        "email": "",
+        "name": "RoGirobot",
+        "photo": "",
+        "region": "isole-e-calabria",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "35": {
+        "city": "Genova",
+        "email": "",
+        "name": "RCassinista",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "36": {
+        "city": "Genova",
+        "email": "",
+        "name": "Grifonrobot",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "37": {
+        "city": "Brescia",
+        "email": "",
+        "name": "Explosivi",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "38": {
+        "city": "Mogliano Veneto",
+        "email": "",
+        "name": "ROBOTWOOD",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "39": {
+        "city": "Pedara",
+        "email": "",
+        "name": "ninja green",
+        "photo": "",
+        "region": "isole-e-calabria",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "40": {
+        "city": "Pistoia",
+        "email": "",
+        "name": "PISTOIA1",
+        "photo": "",
+        "region": "centro",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "41": {
+        "city": "Pistoia",
+        "email": "",
+        "name": "PISTOIA2",
+        "photo": "",
+        "region": "centro",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "42": {
+        "city": "Pistoia",
+        "email": "",
+        "name": "PISTOIA3",
+        "photo": "",
+        "region": "centro",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "43": {
+        "city": "Pistoia",
+        "email": "",
+        "name": "PISTOIA4",
+        "photo": "",
+        "region": "centro",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }
