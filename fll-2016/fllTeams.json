@@ -471,5 +471,104 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "44": {
+        "city": "Genova",
+        "email": "",
+        "name": "ROBOFRIENDS 2",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "45": {
+        "city": "Bergamo",
+        "email": "",
+        "name": "International School of Bergamo",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "46": {
+        "city": "Pozza di Fassa (TN)",
+        "email": "",
+        "name": "Gome Neve",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "47": {
+        "city": "Bolzano",
+        "email": "",
+        "name": "I fagiani arrabbiati",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "48": {
+        "city": "Bolzano",
+        "email": "",
+        "name": "Colicotteri",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "49": {
+        "city": "Casteldaccia (PA)",
+        "email": "",
+        "name": "Petbot",
+        "photo": "",
+        "region": "isole-e-calabria",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "50": {
+        "city": "Aviano (PN)",
+        "email": "",
+        "name": "Robotica Santi",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "52": {
+        "city": "Genova",
+        "email": "",
+        "name": "RoboMosaic",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "53": {
+        "city": "Bassano del Grappa (VI)",
+        "email": "",
+        "name": "Brocchi League",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }
