@@ -53,5 +53,27 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "6": {
+        "city": "Roma",
+        "email": "",
+        "name": "I FANTASTICI ROBOT",
+        "photo": "",
+        "region": "pistoia",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "7": {
+        "city": "Bergamo",
+        "email": "",
+        "name": "International School of Bergamo 2",
+        "photo": "",
+        "region": "brescia",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }

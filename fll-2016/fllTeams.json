@@ -592,5 +592,170 @@
         "tech_report": "",
         "tech_report_preview": "",
         "veteran": false
+    },
+    "55": {
+        "city": "Piazzola sul Brenta (PD)",
+        "email": "",
+        "name": "I RolBot",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "56": {
+        "city": "Milano",
+        "email": "",
+        "name": "Robotica Galvani 2.0",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "57": {
+        "city": "Carimate (Como)",
+        "email": "",
+        "name": "IC Figino Serenza",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "58": {
+        "city": "Succivo (Caserta)",
+        "email": "",
+        "name": "SOCIAL",
+        "photo": "",
+        "region": "sud",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "59": {
+        "city": "Lancenigo di Villorba (Treviso)",
+        "email": "",
+        "name": "I.T.I.S. PLANCK  LEARNING GROUP",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "60": {
+        "city": "Pozza di Fassa (TN)",
+        "email": "",
+        "name": "Gome Veie",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "61": {
+        "city": "Genova",
+        "email": "",
+        "name": "I BOT",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "62": {
+        "city": "Montagnana (Padova)",
+        "email": "",
+        "name": "EDUCANDATO-JACOPO 1",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "63": {
+        "city": "Montagnana (Padova)",
+        "email": "",
+        "name": "EDUCANDATO-JACOPO 2",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "64": {
+        "city": "Rovereto (TN)",
+        "email": "",
+        "name": "RAP- Rosmini Animal Project",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "65": {
+        "city": "Rovereto (TN)",
+        "email": "",
+        "name": "RRF - Rosmini Robot Force",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "66": {
+        "city": "Rovereto (TN)",
+        "email": "",
+        "name": "RAT - Rosmini Animal Tek",
+        "photo": "",
+        "region": "nord-est",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "67": {
+        "city": "Cuneo",
+        "email": "",
+        "name": "CUNEO 1",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "68": {
+        "city": "Cuneo",
+        "email": "",
+        "name": "CUENO 2",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
+    },
+    "69": {
+        "city": "Erbezzo (VR)",
+        "email": "",
+        "name": "San Giorgio",
+        "photo": "",
+        "region": "nord-ovest",
+        "scie_report": "",
+        "tech_report": "",
+        "tech_report_preview": "",
+        "veteran": false
     }
 }
