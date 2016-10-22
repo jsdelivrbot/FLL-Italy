@@ -10,6 +10,10 @@ var origin = {
     'isole-e-calabria': 'Calabria , Sicilia, Sardegna'
 }
 
+var regionsFLL = ['nord-ovest', 'nord-est', 'centro', 'sud', 'isole-e-calabria'];
+var regionsFLLJr = ['rovereto', 'genova', 'pistoia', 'catania', 'brescia', 'settimo-torinese', 'pachino'];
+var colors = ['#ffefef', '#ffffef', '#efffef', '#eff8ff', '#f7efff']
+
 document.addEventListener('DOMContentLoaded', function() {
     var baseUrlFLL = "http://fll-italia.it/fll/2016/";
     var baseUrlFLLJr = "http://fll-italia.it/junior/2016/";
@@ -89,6 +93,7 @@ function build(url, region, team, baseUrl, teamUrl) {
             }
             table = table.replace('#', intermediate)
             document.getElementById('teams').insertAdjacentHTML( 'beforeend', table );
+            addCSS('body{background: linear-gradient(-45deg, #f3f2ef, ' + colors[regionsFLL.concat(regionsFLLJr)[region]] + ');}')
         } else {
             for (var key in data) {
                 if (data.hasOwnProperty(key)) {
@@ -119,4 +124,11 @@ function fetchJSONFile(path, callback) {
     };
     httpRequest.open('GET', path);
     httpRequest.send(); 
+}
+
+function addCSS(cssRule) {
+	var css = document.createElement("style");
+	css.type = "text/css";
+	css.innerHTML = cssRule;
+	document.body.appendChild(css);
 }
