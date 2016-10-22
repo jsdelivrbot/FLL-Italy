@@ -93,7 +93,7 @@ function build(url, region, team, baseUrl, teamUrl) {
             }
             table = table.replace('#', intermediate)
             document.getElementById('teams').insertAdjacentHTML( 'beforeend', table );
-            addCSS('body{background: linear-gradient(-45deg, #f3f2ef, ' + colors[regionsFLL.concat(regionsFLLJr)[region]] + ');}')
+            addCSS('body{background: linear-gradient(-45deg, #f3f2ef, ' + colors[regionsFLL.concat(regionsFLLJr).indexOf(region)] + ');}')
         } else {
             for (var key in data) {
                 if (data.hasOwnProperty(key)) {
