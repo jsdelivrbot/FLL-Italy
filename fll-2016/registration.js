@@ -38,7 +38,7 @@ function build(game, regions, gameUrl) {
             var intermediate = '';
 
             data.forEach(function(row) {
-                regions[row['iscrizione a qualificazione regionale']] += 1;
+                regions[row['iscrizione a qualificazione regionale'].toLowerCase()] += 1;
             })
             Object.keys(regions).forEach(function(key){
                 intermediate += '<tr><td><a href="' + baseURL.replace('?', gameUrl) + key + '">' + key + '</a></td><td>' + regions[key] + '</td></tr>'
