@@ -1,6 +1,7 @@
 /*
-* Page for single teams, region-filtered teams, all teams
-*/
+ * Page for single teams, region-filtered teams, all teams
+ * https://shancarter.github.io/mr-data-converter/
+ */
 
 var origin = {
     'nord-ovest': 'Liguria, Piemonte, Valle D’Aosta, Provincia di Piacenza , Lombardia (eccetto province di Brescia, Sondrio, Mantova)',
@@ -8,16 +9,23 @@ var origin = {
     'centro': 'Toscana, Emilia-Romagna (eccetto Piacenza), Umbria, Marche, alto Lazio, Abruzzo',
     'sud': 'Basso Lazio, Campania, Basilicata, Puglia, Molise',
     'isole-e-calabria': 'Calabria , Sicilia, Sardegna'
-}
+};
+
+var cityToRegion = {
+    'genova': 'nord-ovest',
+    'reggio emilia': 'nord-est',
+    'pistoia': 'centro',
+    'napoli': 'sud',
+    'catania': 'isole-e-calabria'
+};
 
 var regionsFLL = ['nord-ovest', 'nord-est', 'centro', 'sud', 'isole-e-calabria'];
 var regionsFLLJr = ['rovereto', 'genova', 'pistoia', 'catania', 'brescia', 'settimo-torinese', 'pachino'];
-var colors = ['#ffefef', '#ffffef', '#efffef', '#eff8ff', '#f7efff']
+var colors = ['#ffefef', '#ffffef', '#efffef', '#eff8ff', '#f7efff'];
 
 document.addEventListener('DOMContentLoaded', function() {
-    var baseUrlFLL = "http://fll-italia.it/fll/2016/";
-    var baseUrlFLLJr = "http://fll-italia.it/junior/2016/";
-    //var links = ["nord-ovest", "nord-est", "centro", "sud", "isole-e-calabria"];
+    var baseUrlFLL = 'http://fll-italia.it/fll/2016/';
+    var baseUrlFLLJr = 'http://fll-italia.it/junior/2016/';
     var hash = window.location.hash;
     var teamFLLRe = /^#FLL(\d+)$/;
     var teamJrRe = /^#FLLJR(\d+)$/;
@@ -26,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var regionFLLRe = /^#(?:nord-ovest|nord-est|centro|sud|isole-e-calabria)$/;
     var regionJrRe = /^#(?:rovereto|genova|pistoia|catania|brescia|settimo-torinese|pachino)$/;
 
-    console.log("Starting");
+    console.log('Starting');
 
     var teamFLL = teamFLLRe.exec(hash);
     var teamJr = teamJrRe.exec(hash);
@@ -38,22 +46,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var teamFLLJrAll = teamAllFLLJrRe.exec(hash);
 
     if (regionFLL || teamFLL) {
-        build('fllTeams', regionFLL, teamFLL, baseUrlFLL, 'FLL');
+        build('fllTeams', regionFLL, teamFLL, baseUrlFLL);
     } else if (regionJr || teamJr) {
-        build('fllJrTeams', regionJr, teamJr, baseUrlFLLJr, 'FLLJr');
+        build('fllJrTeams', regionJr, teamJr, baseUrlFLLJr);
     } else if (teamFLLAll) {
-    	build("", false, false, baseUrlFLL, 'FLL');
+        build('', false, false, baseUrlFLL);
     } else if (teamFLLJrAll) {
-    	build("", false, false, baseUrlFLLJr, 'FLLJr');
+        build('', false, false, baseUrlFLLJr);
     }
 })
 
-function build(url, region, team, baseUrl, teamUrl) {
+function build(url, region, team, baseUrl) {
     fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/' + url + '.json', function(data){
         // console.log(data);
-        var semiFinalLink = "";
-        var intermediate = "";
-        var teamLink = "";
+        var semiFinalLink = '';
+        var intermediate = '';
+        var teamLink = '';
         var table = '@<table><thead><tr><th>ID</th><th>Team</th><th>Da</th><th>Semi Finale</th></tr></thead><tbody>#</tbody></table>';
 
         if (region) {
@@ -63,7 +71,7 @@ function build(url, region, team, baseUrl, teamUrl) {
         if(team) {
 
         } else if (region) {
-            var over = '<h3>Squadre iscritte alla fase #</h3><div>Le squadre provengono da: @</div></br>'
+            var over = '<h3>Squadre iscritte alla fase #</h3><div>Le squadre provengono da: @</div></br>';
 
             if (url === 'fllTeams') {
                 over = over.replace('#', region).replace('@', origin[region])
@@ -72,44 +80,46 @@ function build(url, region, team, baseUrl, teamUrl) {
                 table = table.replace('@', '');
             }
 
-            for (var key in data) {
-                if (data.hasOwnProperty(key) && region == data[key].region) {
-                    semiFinalLink = baseUrl + "semi-final/#" + data[key].region;
-                    teamLink = baseUrl + "teams/#" + teamUrl + key;
+            data.forEach(function(row) {
+                if (region == convertCityToRegion(row['iscrizione a qualificazione regionale'])) {
+                    semiFinalLink = baseUrl + 'semi-final/#' + row['iscrizione a qualificazione regionale'];
+                    teamLink = baseUrl + 'teams/#' + row['nr. Iscrizione'];
                     intermediate += '<tr>';
-                    intermediate += "<td>" + teamUrl + key + "</td>";
-                    intermediate += "<td>" +
-                                    // "<a href=" + teamLink + ">" +
-                                    data[key].name + 
-                                    // "</a>" +
-                                    "</td>";
-                    intermediate += "<td><a href=http://maps.google.com/?q=" + data[key].city + ">" + data[key].city + "</a></td>";
-                    intermediate += "<td>" +
-                                    // "<a href=" + semiFinalLink + ">" +
-                                    data[key].region + 
-                                    // "</a>" +
-                                    "</td></tr>";
+                    intermediate += '<td>' + row['nr. Iscrizione'] + '</td>';
+                    intermediate += '<td>' +
+                                    // '<a href=' + teamLink + '>' +
+                                    row['nome squadra'] + 
+                                    // '</a>' +
+                                    '</td>';
+                    intermediate += '<td><a href=http://maps.google.com/?q=' + row['città'] + '>' + row['città'] + '</a></td>';
+                    intermediate += '<td>' +
+                                    // '<a href=' + semiFinalLink + '>' +
+                                    row['iscrizione a qualificazione regionale'] + 
+                                    // '</a>' +
+                                    '</td></tr>';
                 }
-            }
+            });
             table = table.replace('#', intermediate)
             document.getElementById('teams').insertAdjacentHTML( 'beforeend', table );
             addCSS('body{background: linear-gradient(-45deg, #f3f2ef, ' + colors[regionsFLL.concat(regionsFLLJr).indexOf(region)] + ');}')
         } else {
-            for (var key in data) {
-                if (data.hasOwnProperty(key)) {
-                    semiFinalLink = baseUrl + "semi-final/#" + data[key].region;
-                    var teamLink = baseUrl + "teams/#" + teamUrl + key;
-                    intermediate += '<tr>';
-                    intermediate += "<td>" + teamUrl + key + "</td>";
-                    intermediate += "<td><a href=" + teamLink + ">" + data[key].name + "</a></td>";
-                    intermediate += "<td><a href=http://maps.google.com/?q="+ data[key].city + ">" + data[key].city + "</a></td>";
-                    intermediate += "<td><a href=" + semiFinalLink + ">" + data[key].region + "</a></td></tr>";
-                }
-            }
+            data.forEach(function(row){
+                semiFinalLink = baseUrl + 'semi-final/#' + row['iscrizione a qualificazione regionale'];
+                var teamLink = baseUrl + 'teams/#' + row['nr. Iscrizione'];
+                intermediate += '<tr>';
+                intermediate += '<td>' + row['nr. Iscrizione'] + '</td>';
+                intermediate += '<td><a href=' + teamLink + '>' + row['nome squadra'] + '</a></td>';
+                intermediate += '<td><a href=http://maps.google.com/?q='+ row['città'] + '>' + row['città'] + '</a></td>';
+                intermediate += '<td><a href=' + semiFinalLink + '>' + row['iscrizione a qualificazione regionale'] + '</a></td></tr>';
+            })
             table = table.replace('#', intermediate)
             document.getElementById('teams').insertAdjacentHTML( 'beforeend', table );
         }
     });
+}
+
+function convertCityToRegion(city) {
+    return cityToRegion[city.replace(' (no Lecce perché team Junior)', '').toLowerCase()];
 }
 
 function fetchJSONFile(path, callback) {
@@ -127,8 +137,8 @@ function fetchJSONFile(path, callback) {
 }
 
 function addCSS(cssRule) {
-	var css = document.createElement("style");
-	css.type = "text/css";
-	css.innerHTML = cssRule;
-	document.body.appendChild(css);
+    var css = document.createElement('style');
+    css.type = 'text/css';
+    css.innerHTML = cssRule;
+    document.body.appendChild(css);
 }
