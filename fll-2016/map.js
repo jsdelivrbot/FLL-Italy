@@ -227,12 +227,12 @@ fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', f
             });
         },
         fills: {
-            defaultFill: '#ABDDA4',
-            NE: '#FF0000',
-            NO: '#FFF64D',
-            C: '#21BF34',
-            CEI: '#B910FF',
-            S: '#38B6FC'
+            defaultFill: 'rgba(171, 221, 164, .7)',
+            NE: 'rgba(255, 0, 0, .7)',
+            NO: 'rgba(255, 246, 77, .7)',
+            C: 'rgba(33, 191, 52, .7)',
+            CEI: 'rgba(185, 16, 255, .7)',
+            S: 'rgba(56, 182, 252, .7)'
         },
         data: regions
     });
