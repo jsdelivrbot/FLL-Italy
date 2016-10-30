@@ -222,8 +222,7 @@ fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', f
         },
         done: function(datamap) {
             datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
-
-                console.log(regions[geography.id]["name"])
+                window.location = 'http://fll-italia.it/fll/2016/' + regions[geography.id]["name"] + '/#' + regions[geography.id]["name"];
             });
         },
         fills: {
