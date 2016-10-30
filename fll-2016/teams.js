@@ -91,10 +91,10 @@ function build(url, region, team, baseUrl) {
                                     row['nome squadra'] + 
                                     // '</a>' +
                                     '</td>';
-                    intermediate += '<td><a href=http://maps.google.com/?q=' + row['città'] + '>' + row['città'] + '</a></td>';
+                    intermediate += '<td><a href=http://maps.google.com/?q=' + row['città'] + '>' + up(row['città']) + '</a></td>';
                     intermediate += '<td>' +
                                     // '<a href=' + semiFinalLink + '>' +
-                                    convertCityToRegion(row['iscrizione a qualificazione regionale']) + 
+                                    up(convertCityToRegion(row['iscrizione a qualificazione regionale'])) + 
                                     // '</a>' +
                                     '</td></tr>';
                 }
@@ -109,8 +109,8 @@ function build(url, region, team, baseUrl) {
                 intermediate += '<tr>';
                 intermediate += '<td>' + row['nr. Iscrizione'] + '</td>';
                 intermediate += '<td><a href=' + teamLink + '>' + row['nome squadra'] + '</a></td>';
-                intermediate += '<td><a href=http://maps.google.com/?q='+ row['città'] + '>' + row['città'] + '</a></td>';
-                intermediate += '<td><a href=' + semiFinalLink + '>' + convertCityToRegion(row['iscrizione a qualificazione regionale']) + '</a></td></tr>';
+                intermediate += '<td><a href=http://maps.google.com/?q='+ row['città'] + '>' + up(row['città']) + '</a></td>';
+                intermediate += '<td><a href=' + semiFinalLink + '>' + up(convertCityToRegion(row['iscrizione a qualificazione regionale'])) + '</a></td></tr>';
             })
             table = table.replace('#', intermediate)
             document.getElementById('teams').insertAdjacentHTML( 'beforeend', table );
@@ -134,6 +134,10 @@ function fetchJSONFile(path, callback) {
     };
     httpRequest.open('GET', path);
     httpRequest.send(); 
+}
+
+function up(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
 
 function addCSS(cssRule) {
