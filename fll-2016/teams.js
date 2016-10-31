@@ -125,7 +125,7 @@ function convertCityToRegion(city, fll) {
         var normalized = city.replace(' (no Lecce perché team Junior)', '').replace(' ', '').toLowerCase();
         return cityToRegion[normalized];
     } else {
-        return city;
+        return city.replace(' ', '').toLowerCase();
     }
     
 }
