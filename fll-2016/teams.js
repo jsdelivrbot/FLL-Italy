@@ -81,6 +81,8 @@ function build(url, region, team, baseUrl) {
             }
 
             data.forEach(function(row) {
+                console.log(row['iscrizione a qualificazione regionale'])
+                console.log(region)
                 if (region == convertCityToRegion(row['iscrizione a qualificazione regionale'], url)) {
                     semiFinalLink = baseUrl + 'semi-final/#' + convertCityToRegion(row['iscrizione a qualificazione regionale'], url);
                     teamLink = baseUrl + 'teams/#' + row['nr. Iscrizione'];
