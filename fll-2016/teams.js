@@ -81,8 +81,8 @@ function build(url, region, team, baseUrl) {
             }
 
             data.forEach(function(row) {
-                if (region == convertCityToRegion(row['iscrizione a qualificazione regionale'])) {
-                    semiFinalLink = baseUrl + 'semi-final/#' + convertCityToRegion(row['iscrizione a qualificazione regionale']);
+                if (region == convertCityToRegion(row['iscrizione a qualificazione regionale'], url)) {
+                    semiFinalLink = baseUrl + 'semi-final/#' + convertCityToRegion(row['iscrizione a qualificazione regionale'], url);
                     teamLink = baseUrl + 'teams/#' + row['nr. Iscrizione'];
                     intermediate += '<tr>';
                     intermediate += '<td>' + row['nr. Iscrizione'] + '</td>';
@@ -94,7 +94,7 @@ function build(url, region, team, baseUrl) {
                     intermediate += '<td><a href=http://maps.google.com/?q=' + row['città'] + '>' + up(row['città']) + '</a></td>';
                     intermediate += '<td>' +
                                     // '<a href=' + semiFinalLink + '>' +
-                                    up(convertCityToRegion(row['iscrizione a qualificazione regionale'])) + 
+                                    up(convertCityToRegion(row['iscrizione a qualificazione regionale'], url)) + 
                                     // '</a>' +
                                     '</td></tr>';
                 }
@@ -104,13 +104,13 @@ function build(url, region, team, baseUrl) {
             addCSS('body{background: linear-gradient(-45deg, #f3f2ef, ' + colors[regionsFLL.concat(regionsFLLJr).indexOf(region)] + ');}')
         } else {
             data.forEach(function(row){
-                semiFinalLink = baseUrl + 'semi-final/#' + convertCityToRegion(row['iscrizione a qualificazione regionale']);
+                semiFinalLink = baseUrl + 'semi-final/#' + convertCityToRegion(row['iscrizione a qualificazione regionale'], url);
                 var teamLink = baseUrl + 'teams/#' + row['nr. Iscrizione'];
                 intermediate += '<tr>';
                 intermediate += '<td>' + row['nr. Iscrizione'] + '</td>';
                 intermediate += '<td><a href=' + teamLink + '>' + row['nome squadra'] + '</a></td>';
                 intermediate += '<td><a href=http://maps.google.com/?q='+ row['città'] + '>' + up(row['città']) + '</a></td>';
-                intermediate += '<td><a href=' + semiFinalLink + '>' + up(convertCityToRegion(row['iscrizione a qualificazione regionale'])) + '</a></td></tr>';
+                intermediate += '<td><a href=' + semiFinalLink + '>' + up(convertCityToRegion(row['iscrizione a qualificazione regionale'], url)) + '</a></td></tr>';
             })
             table = table.replace('#', intermediate)
             document.getElementById('teams').insertAdjacentHTML( 'beforeend', table );
@@ -118,8 +118,14 @@ function build(url, region, team, baseUrl) {
     });
 }
 
-function convertCityToRegion(city) {
-    return cityToRegion[city.replace(' (no Lecce perché team Junior)', '').toLowerCase()];
+function convertCityToRegion(city, fll) {
+    if (fll === 'fllTeams') {
+        var normalized = city.replace(' (no Lecce perché team Junior)', '').replace(' ', '').toLowerCase();
+        return cityToRegion[normalized];
+    } else {
+        return city;
+    }
+    
 }
 
 function fetchJSONFile(path, callback) {
