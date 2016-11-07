@@ -1,72 +1,10 @@
-[
-  {
-    "nr. Iscrizione": "FLLJR 1",
-    "nome squadra": "International School of Bergamo 1",
-    "città": "Bergamo",
-    "email": "emer.downing@isbergamo.com",
-    "cell": "35213776",
-    "iscrizione a qualificazione regionale": "BRESCIA",
-    "progetto scientifico": null,
-    "foto": null
-  },
-  {
-    "nr. Iscrizione": "FLLJR 2",
-    "nome squadra": "Tribù Digitale",
-    "città": "Lecce",
-    "email": "federica.longo@tribudigitale.eu",
-    "cell": "3471645245",
-    "iscrizione a qualificazione regionale": "CATANIA ",
-    "progetto scientifico": null,
-    "foto": null
-  },
-  {
-    "nr. Iscrizione": "FLLJR 3",
-    "nome squadra": "MyColLego jr",
-    "città": "Bosco Chiesanuova (VR)",
-    "email": "roberta.busato@istitutobosco.gov.it",
-    "cell": "3498744571",
-    "iscrizione a qualificazione regionale": "ROVERETO",
-    "progetto scientifico": null,
-    "foto": null
-  },
-  {
-    "nr. Iscrizione": "FLLJR 4",
-    "nome squadra": "STEMpatia",
-    "città": "Gravina in Puglia (Bari)",
-    "email": "rosa.buonamassa@istruzione.it",
-    "cell": "3396629768",
-    "iscrizione a qualificazione regionale": "CATANIA ",
-    "progetto scientifico": null,
-    "foto": null
-  },
-  {
-    "nr. Iscrizione": "FLLJR 5",
-    "nome squadra": "Agujeros Blancos",
-    "città": "Brescia",
-    "email": "robotica@dreampuzzle.net",
-    "cell": "342 7583650",
-    "iscrizione a qualificazione regionale": "BRESCIA",
-    "progetto scientifico": null,
-    "foto": null
-  },
-  {
-    "nr. Iscrizione": "FLLJR 6",
-    "nome squadra": "I FANTASTICI ROBOT",
-    "città": "Roma",
-    "email": "annalisacesaro@gmail.com, g.manzacca@gmail.com",
-    "cell": "3386057797",
-    "iscrizione a qualificazione regionale": "PISTOIA",
-    "progetto scientifico": null,
-    "foto": null
-  },
-  {
-    "nr. Iscrizione": "FLLJR 7",
-    "nome squadra": "International School of Bergamo 2",
-    "città": "Bergamo",
-    "email": "tony.hamilton@isbergamo.com",
-    "cell": "35213776",
-    "iscrizione a qualificazione regionale": "BRESCIA",
-    "progetto scientifico": null,
-    "foto": null
-  }
-]
+[{"nr. Iscrizione":"FLLJR 1","nome squadra":"International School of Bergamo 1","città":"Bergamo","email":"emer.downing@isbergamo.com","cell":"35213776","iscrizione a qualificazione regionale":"BRESCIA","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 2","nome squadra":"Tribù Digitale","città":"Lecce","email":"federica.longo@tribudigitale.eu","cell":"3471645245","iscrizione a qualificazione regionale":"CATANIA ","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 3","nome squadra":"MyColLego jr","città":"Bosco Chiesanuova (VR)","email":"roberta.busato@istitutobosco.gov.it","cell":"3498744571","iscrizione a qualificazione regionale":"ROVERETO","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 4","nome squadra":"STEMpatia","città":"Gravina in Puglia (Bari)","email":"rosa.buonamassa@istruzione.it","cell":"3396629768","iscrizione a qualificazione regionale":"CATANIA ","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 5","nome squadra":"Agujeros Blancos","città":"Brescia","email":"robotica@dreampuzzle.net","cell":"342 7583650","iscrizione a qualificazione regionale":"BRESCIA","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 6","nome squadra":"I FANTASTICI ROBOT","città":"Roma","email":"annalisacesaro@gmail.com, g.manzacca@gmail.com","cell":"3386057797","iscrizione a qualificazione regionale":"PISTOIA","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 7","nome squadra":"International School of Bergamo 2","città":"Bergamo","email":"tony.hamilton@isbergamo.com","cell":"35213776","iscrizione a qualificazione regionale":"BRESCIA","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 8","nome squadra":" ISMONZA TECHNOCATS","città":"Monza","email":"apasion@ism-ac.it,Daniela.candutti@gmail.com","cell":"327 081 5481/ 349 7680258","iscrizione a qualificazione regionale":"ROVERETO (hanno richiesto per comodità di date)","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 9","nome squadra":" ISMONZA HAWKTICS","città":"Monza","email":"apasion@ism-ac.it,Daniela.candutti@gmail.com","cell":"327 081 5481/ 349 7680258","iscrizione a qualificazione regionale":"ROVERETO (hanno richiesto per comodità di date)","progetto scientifico":null,"foto":null},
+{"nr. Iscrizione":"FLLJR 10","nome squadra":" ISMONZA R2Tigers","città":"Monza","email":"apasion@ism-ac.it,Daniela.candutti@gmail.com","cell":"327 081 5481/ 349 7680258","iscrizione a qualificazione regionale":"ROVERETO (hanno richiesto per comodità di date)","progetto scientifico":null,"foto":null}]
