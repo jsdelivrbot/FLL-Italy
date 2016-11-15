@@ -122,7 +122,11 @@ function build(url, region, team, baseUrl) {
 
 function convertCityToRegion(city, fll) {
     if (fll === 'fllTeams') {
-        var normalized = city.replace(' (no Lecce perché team Junior)', '').replace(' ', '').toLowerCase();
+        var normalized = city
+            .replace(' (no Lecce perché team Junior)', '')
+            .replace(' (no Napoli perché team Junior)', '')
+            .replace(' (no REGGIO EMILIA per motivi organizzativi!)', '')
+            .toLowerCase();
         return cityToRegion[normalized];
     } else {
         return city.replace(' ', '').toLowerCase();
