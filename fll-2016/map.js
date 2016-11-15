@@ -218,7 +218,7 @@ fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', f
         scope: 'sub',
         setProjection: function(element) {
             var projection = d3.geo.albers()
-            .center([13, 42])
+            .center([12, 38])
             .rotate([0, 0])
             .scale(2050)
             .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
