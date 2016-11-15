@@ -14,7 +14,7 @@ var subscriptions = {
 };
 var time = {
     'nord-ovest': "11 febbraio 2017",
-    'nord-est': "27 - 28 gennaio 2017",
+    'nord-est': "28 - 29 gennaio 2017",
     'centro': "18 febbraio 2017",
     'sud': "15 febbraio 2017",
     'isole-e-calabria': "7 febbraio 2017"
