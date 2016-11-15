@@ -1,0 +1,32 @@
+.ttContainer {
+    text-align: start;
+    width: 250px;
+    border: 1px solid #d3d3d3;
+    background-color: rgba(255, 255, 255, .85);
+    transform: translateX(-40px)
+}
+.tt {
+    padding: 10px;
+    font-size: 14px;
+    color: #333
+}
+.xl {
+    font-size: 16px
+}
+.l {
+    font-size: 15px
+}
+#container {
+    overflow: visible
+}
+hr {
+    height: 1px;
+    border-top: 1px;
+    border-bottom: 1px;
+    background-color: #dadada;
+}
+@media (min-width: 800px) {
+  .onlyMobile {
+    display: none;
+  }
+}
