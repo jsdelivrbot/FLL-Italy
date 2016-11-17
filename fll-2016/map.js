@@ -194,7 +194,7 @@ fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', f
     });
     var map = new Datamap({
         element: document.getElementById('container'),
-        responsive: true,
+        responsive: 1,
         geographyConfig: {
             popupOnHover: true,
             borderColor: '#545454',
@@ -209,8 +209,7 @@ fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', f
                 '<div class="tt"><strong class="xl">' + up(data.name) + '</strong><br/><br/><strong class="l">' +
                 data.referrer + '</strong> organizzerà la <i>FIRST</i>® LEGO® League a <strong class="l">' + data.location +
                 '</strong> e parteciperanno <strong class="l">' + subscriptions[regions[geography.id]["name"]] + '</strong> squadre. ' +
-                '<br/><hr/>L\'evento si terrà il <strong class="l">' + time[regions[geography.id]["name"]] + '</strong>'+
-                '<br/><br/><a class="onlyMobile" href=http://fll-italia.it/fll/2016/' + data.name + '/#' + data.name + '>Link alla fase ' + up(data.name) + '</a></div>'+
+                '<br/><hr/>L\'evento si terrà il <strong class="l">' + time[regions[geography.id]["name"]] + '</strong>' +
                 '</div>'
             },
             dataUrl: 'https://cdn.rawgit.com/Naramsim/FLL-Italy/master/art/registrationMap/topo.json'
@@ -218,9 +217,9 @@ fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', f
         scope: 'sub',
         setProjection: function(element) {
             var projection = d3.geo.albers()
-            .center([12, 38])
+            .center([12, 39])
             .rotate([0, 0])
-            .scale(2050)
+            .scale(1600)
             .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
             var path = d3.geo.path()
             .projection(projection);
