@@ -43,6 +43,7 @@ hr {
     transform: translateX(-75px) translateY(-10px);
   }
   #container > svg {
-    position: static;
+    position: static !important; /* to override Datamaps properties*/
+    overflow: visible !important;
   }
 }
