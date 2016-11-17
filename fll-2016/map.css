@@ -42,4 +42,7 @@ hr {
     width: 150px;
     transform: translateX(-75px) translateY(-10px);
   }
+  #container > svg {
+    position: static;
+  }
 }
