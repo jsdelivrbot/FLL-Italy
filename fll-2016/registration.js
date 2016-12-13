@@ -10,13 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         'centro': 0,
                         'sud': 0,
                         'isole-e-calabria': 0};
-    var regionsJr = {   'rovereto': 0,
-                        'genova': 0,
+    var regionsJr = {   'brescia': 0,
                         'pistoia': 0,
+                        'pachino': 0,
                         'catania': 0,
-                        'brescia': 0,
+                        'genova': 0,
                         'settimo-torinese': 0,
-                        'pachino': 0};
+                        'rovereto': 0
+                        };
 
     if (currentGame[1] === 'fll') {
         build('fll', regionsFLL, currentGame[1])
