@@ -28,9 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function build(game, regions, gameUrl) {
     var request = new XMLHttpRequest();
     
-    if (game === 'fllJr') {
-        baseURL = baseURL.replace('teams', 'team')
-    }
+    
     request.open('GET', 'https://rawgit.com/Naramsim/FLL-Italy/master/fll-2016/' + game + 'Teams.json', true);
     request.onload = function() {
         if (this.status >= 200 && this.status < 400) {
@@ -41,6 +39,9 @@ function build(game, regions, gameUrl) {
                 regions[row['iscrizione a qualificazione regionale'].toLowerCase().replace(' ', '')] += 1;
             })
             Object.keys(regions).forEach(function(key){
+                if (game === 'fllJr') {
+                    baseURL = baseURL.replace('teams/', key);
+                }
                 intermediate += '<tr><td><a href="' + baseURL.replace('?', gameUrl) + key + '">' + key + '</a></td><td>' + regions[key] + '</td></tr>'
             })
 
