@@ -39,10 +39,11 @@ function build(game, regions, gameUrl) {
                 regions[row['iscrizione a qualificazione regionale'].toLowerCase().replace(' ', '')] += 1;
             })
             Object.keys(regions).forEach(function(key){
+                var baseURLNew = baseURL;
                 if (game === 'fllJr') {
-                    baseURL = baseURL.replace('teams/', key);
+                    baseURLNew = baseURLNew.replace('teams/', key);
                 }
-                intermediate += '<tr><td><a href="' + baseURL.replace('?', gameUrl) + key + '">' + key + '</a></td><td>' + regions[key] + '</td></tr>'
+                intermediate += '<tr><td><a href="' + baseURLNew.replace('?', gameUrl) + key + '">' + key + '</a></td><td>' + regions[key] + '</td></tr>'
             })
 
             table = table.replace('#', intermediate)
