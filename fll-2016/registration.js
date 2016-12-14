@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         'pachino': 0,
                         'catania': 0,
                         'genova': 0,
-                        'settimo-torinese': 0,
                         'rovereto': 0
                         };
 
