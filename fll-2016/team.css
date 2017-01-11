@@ -1,0 +1,37 @@
+.root {
+  width:100%;
+  text-align: center;
+}
+
+.name {
+  font-size: 48px;
+}
+
+.name, .s {
+  display: inline-block;
+}
+
+.f{
+  height: 500px;
+}
+
+.s{
+  height: 40px;
+}
+
+.bar {
+  width: 100%;
+  clear: both;
+}
+
+.class {
+  float: left;
+}
+
+.animal {
+  float: right;
+}
+
+.sum {
+  margin-top: 40px;
+}
