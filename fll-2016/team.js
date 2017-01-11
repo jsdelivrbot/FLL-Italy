@@ -18,17 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
 function build(team) {
     if (team) {
         var render = '<div class="root"> ' +
-          '<div>' +
-          '<div class="name">Xn</div>' +
-            '<img class="s" src="http://imgur.com/7wcRo0y.png" alt="">' +
+          '<div class="head">' +
+              '<div class="name">Xn</div>' +
+              '<img class="s" src="http://imgur.com/cYG4Lyv" alt="">' +
           '</div>' +
           '<div class="image">' +
             '<img class="f" src="Xi" alt="">' +
            '</div>' +
           '<div class="bar">' +
-            '<div class="class">Xc</div>' +
-            '<div class="animal">Xa</div>' +
+            '<div class="class">Sono Xc</div>' +
+            '<div class="animal">Animale preferito: Xa</div>' +
           '</div>' +
+          '<div class="sumHead">Riassunto progetto scientifico</div>' +
           '<div class="sum">Xr</div>' +
         '</div>';
         
@@ -38,8 +39,8 @@ function build(team) {
 
         render = render.replace('Xn', team["Nome ufficiale della squadra"])
             .replace('Xi', picture)
-            .replace('Xc', team["Fate parte di"])
-            .replace('Xa', team["Qual é il vostro animale preferito?"])
+            .replace('Xc', low(team["Fate parte di"]))
+            .replace('Xa', low(team["Qual é il vostro animale preferito?"]))
             .replace('Xr', team["Riassunto progetto scientifico"])
 
         var article = document.getElementById('team');
@@ -59,4 +60,8 @@ function fetchJSONFile(path, callback) {
     };
     httpRequest.open('GET', path);
     httpRequest.send(); 
+}
+
+function low(str) {
+    return str.slice(0,1).toLowerCase() + str.slice(1);
 }
