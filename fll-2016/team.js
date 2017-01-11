@@ -2,45 +2,49 @@
 var hash = window.location.hash.slice(4);
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/formTeams.json', function(data) {
-        var team = false;
-        data.forEach(function(row) {
-            if (row["ID Squadra"] === hash) {
-                team = row;
-            }
+    if (hash) {
+        fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/formTeams.json', function(data) {
+            var team = false;
+            data.forEach(function(row) {
+                if (row["ID Squadra"] === hash) {
+                    team = row;
+                }
+            });
+            build(team);
         });
-        build(team);
-    });
+    }
 });
 
 function build(team) {
-    render = '<div class="root"> ' +
-      '<div>' +
-      '<div class="name">Xn</div>' +
-        '<img class="s" src="http://imgur.com/7wcRo0y.png" alt="">' +
-      '</div>' +
-      '<div class="image">' +
-        '<img class="f" src="Xi" alt="">' +
-       '</div>' +
-      '<div class="bar">' +
-        '<div class="class">Xc</div>' +
-        '<div class="animal">Xa</div>' +
-      '</div>' +
-      '<div class="sum">Xr</div>' +
-    '</div>';
-    
-    var picture = team["Foto del team"].slice(0, 4) === 'http' ? team["Foto del team"] : 'http://imgur.com/EQHcye1.png';
+    if (team) {
+        var render = '<div class="root"> ' +
+          '<div>' +
+          '<div class="name">Xn</div>' +
+            '<img class="s" src="http://imgur.com/7wcRo0y.png" alt="">' +
+          '</div>' +
+          '<div class="image">' +
+            '<img class="f" src="Xi" alt="">' +
+           '</div>' +
+          '<div class="bar">' +
+            '<div class="class">Xc</div>' +
+            '<div class="animal">Xa</div>' +
+          '</div>' +
+          '<div class="sum">Xr</div>' +
+        '</div>';
+        
+        var picture = team["Foto del team"].slice(0, 4) === 'http' ? team["Foto del team"] : 'http://imgur.com/EQHcye1.png';
 
-    picture = picture.slice(-4) === '.png' ? picture : picture.concat('.png');
+        picture = picture.slice(-4) === '.png' ? picture : picture.concat('.png');
 
-    render.replace('Xn', team["Nome ufficiale della squadra"])
-        .replace('Xi', picture)
-        .replace('Xc', team["Fate parte di"])
-        .replace('Xa', team["Qual é il vostro animale preferito?"])
-        .replace('Xr', team["Riassunto progetto scientifico"])
+        render = render.replace('Xn', team["Nome ufficiale della squadra"])
+            .replace('Xi', picture)
+            .replace('Xc', team["Fate parte di"])
+            .replace('Xa', team["Qual é il vostro animale preferito?"])
+            .replace('Xr', team["Riassunto progetto scientifico"])
 
-    var article = document.getElementById('team');
-    article.insertAdjacentHTML('beforeend', render);
+        var article = document.getElementById('team');
+        article.insertAdjacentHTML('beforeend', render);
+    }
 }
 
 function fetchJSONFile(path, callback) {

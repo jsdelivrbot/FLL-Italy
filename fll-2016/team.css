@@ -4,7 +4,7 @@
 }
 
 .name {
-  font-size: 48px;
+  font-size: 43px;
 }
 
 .name, .s {
@@ -34,6 +34,7 @@
 
 .sum {
   margin-top: 40px;
+  text-align: left;
 }
 
 .swtitle {
