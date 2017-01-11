@@ -2,7 +2,7 @@
 var hash = window.location.hash.slice(4);
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/formTeam.json', function(data) {
+    fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/formTeams.json', function(data) {
         var team = false;
         data.forEach(function(row) {
             if (row["ID Squadra"] === hash) {
