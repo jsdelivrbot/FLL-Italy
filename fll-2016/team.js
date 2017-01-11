@@ -65,5 +65,5 @@ function fetchJSONFile(path, callback) {
 }
 
 function low(str) {
-    return str.slice(0,1).toLowerCase() + str.slice(1);
+    return str.toLowerCase();
 }
