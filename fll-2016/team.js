@@ -20,7 +20,7 @@ function build(team) {
         var render = '<div class="root"> ' +
           '<div class="head">' +
               '<div class="name">Xn</div>' +
-              '<img class="s" src="http://imgur.com/cYG4Lyv" alt="">' +
+              '<img class="s" src="Xv" alt="">' +
           '</div>' +
           '<div class="image">' +
             '<img class="f" src="Xi" alt="">' +
@@ -32,13 +32,15 @@ function build(team) {
           '<div class="sumHead">Riassunto progetto scientifico</div>' +
           '<div class="sum">Xr</div>' +
         '</div>';
-        
+
+        var vet = team["E' la prima volta che partecipate?"] === 'Si' ? 'http://imgur.com/cYG4Lyv.png' : 'http://imgur.com/WySwE6H.png';
         var picture = team["Foto del team"].slice(0, 4) === 'http' ? team["Foto del team"] : 'http://imgur.com/EQHcye1.png';
 
         picture = picture.slice(-4) === '.png' ? picture : picture.concat('.png');
 
         render = render.replace('Xn', team["Nome ufficiale della squadra"])
             .replace('Xi', picture)
+            .replace('Xv', vet)
             .replace('Xc', low(team["Fate parte di"]))
             .replace('Xa', low(team["Qual é il vostro animale preferito?"]))
             .replace('Xr', team["Riassunto progetto scientifico"])
