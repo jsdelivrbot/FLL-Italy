@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/formTeams.json', function(data) {
             var team = false;
             data.forEach(function(row) {
-                if (row["ID Squadra"] === hash) {
+                if (row["ID Squadra"] == hash) {
                     team = row;
                 }
             });
