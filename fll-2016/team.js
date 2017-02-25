@@ -31,10 +31,12 @@ function build(team) {
           '</div>' +
           '<div class="sumHead">Riassunto progetto scientifico</div>' +
           '<div class="sum">Xr</div>' +
+          '<div class="vid">Xvid</div>' +
         '</div>';
 
         var vet = team["E' la prima volta che partecipate?"] === 'Si' ? 'http://imgur.com/cYG4Lyv.png' : 'http://imgur.com/WySwE6H.png';
         var picture = team["Foto del team"].slice(0, 4) === 'http' ? team["Foto del team"] : 'http://imgur.com/EQHcye1.png';
+        var video = '<iframe src=' + team["video"] + ' width="80%" height="480"></iframe>';
 
         picture = picture.slice(-4) === '.png' ? picture : picture.concat('.png');
 
@@ -43,7 +45,11 @@ function build(team) {
             .replace('Xv', vet)
             .replace('Xc', low(team["Fate parte di"]))
             .replace('Xa', low(team["Qual é il vostro animale preferito?"]))
-            .replace('Xr', team["Riassunto progetto scientifico"])
+            .replace('Xr', team["Riassunto progetto scientifico"]);
+
+        if (video) {
+            render = render.replace('Xvid', video);
+        }
 
         var article = document.getElementById('team');
         article.insertAdjacentHTML('beforeend', render);
