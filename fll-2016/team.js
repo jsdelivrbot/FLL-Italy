@@ -36,7 +36,7 @@ function build(team) {
 
         var vet = team["E' la prima volta che partecipate?"] === 'Si' ? 'http://imgur.com/cYG4Lyv.png' : 'http://imgur.com/WySwE6H.png';
         var picture = team["Foto del team"].slice(0, 4) === 'http' ? team["Foto del team"] : 'http://imgur.com/EQHcye1.png';
-        var video = '<iframe src=' + team["video"] + ' width="80%" height="480"></iframe>';
+        var video = team["Video"] ? ('<iframe src=' + team["Video"] + ' width="80%" height="480"></iframe>') : "";
 
         picture = picture.slice(-4) === '.png' ? picture : picture.concat('.png');
 
