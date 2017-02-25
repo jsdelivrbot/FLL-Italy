@@ -45,11 +45,9 @@ function build(team) {
             .replace('Xv', vet)
             .replace('Xc', low(team["Fate parte di"]))
             .replace('Xa', low(team["Qual é il vostro animale preferito?"]))
-            .replace('Xr', team["Riassunto progetto scientifico"]);
+            .replace('Xr', team["Riassunto progetto scientifico"])
+            .replace('Xvid', video);
 
-        if (video) {
-            render = render.replace('Xvid', video);
-        }
 
         var article = document.getElementById('team');
         article.insertAdjacentHTML('beforeend', render);
