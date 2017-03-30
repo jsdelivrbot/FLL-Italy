@@ -426,3 +426,21 @@ Main components
   width: 100%;
   margin-top: 22px;
 }
+
+/* New website under mcr.it*/
+
+#content {
+  width: 100%;
+}
+
+.cd-faq-categories a {
+  color: #ed1c24;
+}
+
+a.cd-faq-trigger {
+  color: #ed1c24;
+}
+
+.cd-faq-content p {
+  color: #555555;
+}
