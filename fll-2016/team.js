@@ -24,7 +24,7 @@ function buildAllTeams() {
   var teamLink = "";
   var table = '<table><thead><tr><th>ID</th><th>Team</th><th>Da</th><th>Semi Finale</th></tr></thead><tbody>#</tbody></table>';
 
-  fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/formTeams.json', function(data) {
+  fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', function(data) {
     data.forEach(function(row) {
       
       teamLink = baseUrl + 'team/#' + row['nr. Iscrizione'].replace(' ', '');
