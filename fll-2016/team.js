@@ -1,6 +1,6 @@
 
 var hash = window.location.hash.slice(4);
-var baseUrlFLL = 'http://fll-italia.it/fll/2016/';
+var baseUrl = 'http://fll-italia.it/fll/2016/';
 
 document.addEventListener('DOMContentLoaded', function() {
   if (hash) {
