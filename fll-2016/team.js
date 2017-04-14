@@ -1,6 +1,13 @@
 
 var hash = window.location.hash.slice(4);
 var baseUrl = 'http://fll-italia.it/fll/2016/';
+var cityToRegion = {
+    'genova': 'nord-ovest',
+    'reggio emilia': 'nord-est',
+    'pistoia': 'centro',
+    'napoli': 'sud',
+    'catania': 'isole-e-calabria'
+};
 
 document.addEventListener('DOMContentLoaded', function() {
   if (hash) {
