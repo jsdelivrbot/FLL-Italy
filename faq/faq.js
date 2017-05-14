@@ -62,12 +62,6 @@ var faq = `
 					<p><i>FIRST</i>® LEGO® League fa affidamento su volontari per far funzionare il programma a molti livelli, dall’organizzare una regione all’allenare un’unica squadra. I partner <i>FIRST</i>® LEGO® League diffondono il programma della <i>FIRST</i>® LEGO® League nelle loro rispettive regioni. Questi partner <i>FIRST</i>® LEGO® League raccolgono fondi, gestiscono i tornei di campionato, tengono dei seminari e dimostrazioni, commerciano localmente <i>FIRST</i>® LEGO® League, gestiscono le pubbliche relazioni e reclutano volontari e squadre.</p>
 				</div> <!-- cd-faq-content -->
 			</li>
-			<li>
-				<a class="cd-faq-trigger" href="#0">Quali altri sponsor sono coinvolti?</a>
-				<div class="cd-faq-content">
-					<p>Oltre al ruolo del gruppo LEGO® come partner fondatore, <i>FIRST</i>® LEGO® League è supportata da Official Suppliers 3M and LEGO® System A/S e dalla Global Sponsors NI and Rockwell Automation. In più, i tornei di campionato di <i>FIRST</i>® LEGO® League sono resi possibili grazie a 200 sponsor locali con più di 45 università e college partecipanti alla <i>FIRST</i>® LEGO® League.</p>
-				</div> <!-- cd-faq-content -->
-			</li>
 		</ul> <!-- cd-faq-group -->
 
 		<ul id="costiPremi" class="cd-faq-group">
@@ -93,7 +87,7 @@ var faq = `
 			<li>
 				<a class="cd-faq-trigger" href="#0">Dove posso iscrivermi?</a>
 				<div class="cd-faq-content">
-					<p>Per iscriversi bisogna compilare un modulo: <a href="http://fll-italia.it/iscrizione/">qui</a> per la <i>FIRST</i>® LEGO® League, <a href="http://fll-italia.it/junior/2016/">qui</a> per la <i>FIRST</i>® LEGO® League Junior</p>
+					<p>Per iscriversi bisogna compilare un modulo: <a href="/fllitalia_getinvolved">qui</a> per la <i>FIRST</i>® LEGO® League, <a href="/fllitalia_getinvolved">qui</a> per la <i>FIRST</i>® LEGO® League Junior</br> Piú info al seguente <a href="/fllitalia_getinvolved">link</a></p>
 				</div> <!-- cd-faq-content -->
 			</li>
 
