@@ -77,7 +77,7 @@ var faq = `
 			<li>
 				<a class="cd-faq-trigger" href="#0">Cosa vincono gli studenti?</a>
 				<div class="cd-faq-content">
-					<p>La competizione è giudicata in quattro aree: la presentazione del progetto, la performance del robot, la progettazione tecnica e la programmazione del robot e il lavoro di squadra. Una giuria di illustri professionisti prende le decisioni per il premio. Il più alto onore, il Champion’s Award, va alla squadra più forte in tutte e quattro le categorie. Ogni partecipante del torneo di campionato riceve un medaglione per commemorare la sua esperienza e la dedizione al percorso di otto settimane. Durante la finale altri premi vengono assegnati in base alla classifica nelle specifiche aree, da droni a stampinti 3D a kit EV3</p>
+					<p>La competizione è giudicata in quattro aree: la presentazione del progetto, la performance del robot, la progettazione tecnica e la programmazione del robot e il lavoro di squadra. Una giuria di illustri professionisti prende le decisioni per il premio. Il più alto onore, il Champion’s Award, va alla squadra più forte in tutte e quattro le categorie. Ogni partecipante del torneo di campionato riceve un medaglione per commemorare la sua esperienza e la dedizione al percorso di otto settimane. Durante la finale altri premi vengono assegnati in base alla classifica nelle specifiche aree, da droni a stampanti 3D a kit EV3</p>
 				</div> <!-- cd-faq-content -->
 			</li>
 		</ul> <!-- cd-faq-group -->
