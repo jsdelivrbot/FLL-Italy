@@ -1,6 +1,6 @@
 
 var hash = window.location.hash.slice(4);
-var baseUrl = 'http://fll-italia.it/fll/2016/';
+var baseUrl = 'http://fll-italia.it/fll_context.jsp?ID_LINK=114208&area=341';
 var cityToRegion = {
     'genova': 'nord-ovest',
     'reggio emilia': 'nord-est',
@@ -34,7 +34,7 @@ function buildAllTeams() {
   fetchJSONFile('https://rawgit.com/Naramsim/FLL/master/fll-2016/fllTeams.json', function(data) {
     data.forEach(function(row) {
       
-      teamLink = baseUrl + 'team/#' + row['nr. Iscrizione'].replace(' ', '');
+      teamLink = baseUrl + '#' + row['nr. Iscrizione'].replace(' ', '');
       intermediate += '<tr>';
       intermediate += '<td>' + row['nr. Iscrizione'] + '</td>';
       intermediate += '<td>' +
