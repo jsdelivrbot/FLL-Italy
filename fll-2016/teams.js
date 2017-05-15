@@ -24,8 +24,8 @@ var regionsFLLJr = ['rovereto', 'genova', 'pistoia', 'catania', 'brescia', 'sett
 var colors = ['#ffefef', '#ffffef', '#efffef', '#eff8ff', '#f7efff'];
 
 document.addEventListener('DOMContentLoaded', function() {
-    var baseUrlFLL = 'http://fll-italia.it/fll/2016/';
-    var baseUrlFLLJr = 'http://fll-italia.it/junior/2016/';
+    var baseUrlFLL = 'http://fll-italia.it/fll_context.jsp?ID_LINK=114208&area=341';
+    var baseUrlFLLJr = 'http://fll-italia.it/fll_context.jsp?ID_LINK=114208&area=341';
     var hash = window.location.hash;
     var teamFLLRe = /^#FLL(\d+)$/;
     var teamJrRe = /^#FLLJR(\d+)$/;
@@ -85,7 +85,7 @@ function build(url, region, team, baseUrl) {
                 console.log(region)
                 if (region == convertCityToRegion(row['iscrizione a qualificazione regionale'], url)) {
                     semiFinalLink = baseUrl + 'semi-final/#' + convertCityToRegion(row['iscrizione a qualificazione regionale'], url);
-                    teamLink = baseUrl + 'team/#' + row['nr. Iscrizione'].replace(' ', '');
+                    teamLink = baseUrl + '#' + row['nr. Iscrizione'].replace(' ', '');
                     intermediate += '<tr>';
                     intermediate += '<td>' + row['nr. Iscrizione'] + '</td>';
                     intermediate += '<td>' +
