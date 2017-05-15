@@ -38,7 +38,7 @@ function buildAllTeams() {
       intermediate += '<tr>';
       intermediate += '<td>' + row['nr. Iscrizione'] + '</td>';
       intermediate += '<td>' +
-      '<a href=' + teamLink + '>' +
+      '<a target="_blank" href=' + teamLink + '>' +
       row['nome squadra'] + 
       '</a>' +
       '</td>';
