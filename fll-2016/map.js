@@ -1,8 +1,8 @@
 // needed: 
 // <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 // <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-// <script src="https://cdn.rawgit.com/markmarkoh/datamaps/master/dist/datamaps.none.min.js"></script>
-// <link rel="stylesheet" type="text/css" href="https://rawgit.com/Naramsim/FLL-Italy/master/fll-2016/map.css">
+// <script src="https://cdn.jsdelivr.net/gh/markmarkoh/datamaps/dist/datamaps.none.min.js"></script>
+// <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Naramsim/FLL-Italy/fll-2016/map.css">
 // <div id="container" style="position: relative; width: 100%; height: 400px;"></div>
 
 var subscriptions = {
